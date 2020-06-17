@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+    font-size: $global-font-size;
+    // @include breakpoint(60em) {
+    //     font-size: 15px;
+    // }
+    @include breakpoint(80em) {
+        font-size: 16px;
+    }
+    @include breakpoint(100em) {
+        font-size: 18px;
+    }
+}
+
+// Set box-sizing globally to handle padding and border widths
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: $fontsans;
+    font-weight: $fw-normal;
+    line-height: 1.4;
+
+    -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+    -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+}
+
+body {
+    @include breakpoint($bp-tablet) {
+        width: calc(100% - #{$globalsidebarwidth});
+        margin-left: $globalsidebarwidth;
+    }
+}
+
+
+img {
+    // Get rid of gap under images by making them display: inline-block; by default
+    display: inline-block;
+    vertical-align: middle;
+
+    // Grid defaults to get images and embeds to work properly
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+.screen-reader, .screen-reader-text {
+    position: absolute!important;
+    clip: rect(1px,1px,1px,1px);
+}
+

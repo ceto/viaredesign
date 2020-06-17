@@ -1,0 +1,19 @@
+.pagesidebar {
+    background-color: $black;
+    color: #fff;
+    position: fixed;
+    top:0;
+    left:-#{$globalsidebarwidth};
+    bottom:0;
+    height:100%;
+    width:#{$globalsidebarwidth};
+    padding: 1rem;
+    z-index: 1000;
+
+
+
+
+    @include breakpoint($bp-tablet) {
+        left:0;
+    }
+}

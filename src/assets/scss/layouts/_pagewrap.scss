@@ -1,0 +1,58 @@
+
+.pagewrap {
+    //max-width: 90%;
+    //border:1px solid red;
+    overflow: hidden;
+    margin:0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    @include breakpoint(80em) {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+    
+    @include breakpoint(95em) {
+        padding-left: calc(50% - #{$global-width/2});
+        padding-right: calc(50% - #{$global-width/2});
+        // padding-top: 6rem;
+        // padding-bottom: 6rem;
+    }
+
+    // @include breakpoint(100em) {
+    //     padding-top: 7rem;
+    //     padding-bottom: 7rem;
+    // }
+
+    &.full {
+        @include breakpoint(95em) {
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+        }   
+    }
+    &.short {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &.dark {
+        background-color: $cl-gray-dark;
+        color: #fff;
+    }
+}
+
+.narrowwrap {
+    max-width: 60rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+.box {
+    background-color: #fff;
+    color: $cl-body-font-color;
+    padding:2rem;
+}

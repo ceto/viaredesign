@@ -1,0 +1,43 @@
+$global-font-size: 14px;
+$fontsans: 'Roboto', sans-serif;
+$fw-black: 900;
+$fw-bold: 600;
+$fw-normal: 400;
+$fw-light: 200;
+
+
+// Colors
+$white: #fefefe;
+$black: #202020;
+
+$cl-primary: #ad0133;
+$cl-secondary: #5c34a6;
+$cl-gray-dark: #323232;
+$cl-gray-xlight: #f4f2f8;
+$cl-gray-light: #dbdadf;
+$cl-body-font-color: $black;
+
+$cl-bglight: #673ab7;
+$cl-bgdark: #482895;
+
+
+// Layout / Grid
+$layout-col-count: 12;
+$layout-col-width: 72px;
+$layout-gutter-width: 20px;
+$layout-content: ($layout-col-count * $layout-col-width) + (($layout-col-count - 1) * $layout-gutter-width);
+$layout-gutter-pct: percentage($layout-gutter-width / $layout-content);
+
+$global-width: $layout-content;
+
+// Breakpoints
+$bp-medium: 375px;
+$bp-tablet: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1280px;
+$bp-xxlarge: 1440px;
+$bp-xxxlarge: 1920px;
+
+$bp-bigdesktop: 1560px;
+
+$globalsidebarwidth: 10rem;

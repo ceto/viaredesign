@@ -1,0 +1,19 @@
+.sitefooter {
+    padding-top: calc(2vw + .5rem);
+    padding-bottom: calc(2vw + .5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: darken($cl-secondary, 30%);
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+
+
+.sitelogo {
+   .sitefooter & {
+    max-width: 5rem;
+   }
+}
