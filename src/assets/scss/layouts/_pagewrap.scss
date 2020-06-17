@@ -9,9 +9,13 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     width: 100%;
-    @include breakpoint(80em) {
+    @include breakpoint($bp-large) {
         padding-left: 7.5%;
         padding-right: 7.5%;
+    }
+    @include breakpoint(80em) {
+        padding-left: 10%;
+        padding-right: 10%;
     }
     
     @include breakpoint(95em) {
@@ -31,6 +35,19 @@
             padding-left: 7.5%;
             padding-right: 7.5%;
         }   
+    }
+    &.nohpad {
+        padding-left: 0;
+        padding-right: 0;
+        @include breakpoint(95em) {
+            padding-left: 0;
+            padding-right: 0;
+        }   
+    }
+
+    &.novpad {
+        padding-top: 0;
+        padding-bottom: 0;   
     }
     &.short {
         padding-top: 2rem;

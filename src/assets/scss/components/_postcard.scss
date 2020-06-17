@@ -1,0 +1,52 @@
+.postcard {
+    img {
+        margin-bottom: 1rem;
+    }
+}
+.postcardgrid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: rem-calc($layout-gutter-width * 1);
+    grid-row-gap: rem-calc($layout-gutter-width * 1);
+    grid-auto-rows: 1fr;
+
+    @include breakpoint($bp-medium) {
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+ 
+    }
+
+    > li {
+        background-color: $cl-primary;
+        background-color: $cl-gray-xlight;
+        padding:1rem;
+        color: #fff;
+        color: $cl-body-font-color;
+    }
+}
+
+.postcardfauxgrid {
+    list-style: none;
+    margin: 0 0;
+    padding: rem-calc($layout-gutter-width / 2 )  0;
+    background-color: $black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: rem-calc($layout-gutter-width / 2 );
+    grid-row-gap: rem-calc($layout-gutter-width / 2);
+    grid-auto-rows: 1fr;
+
+    @include breakpoint($bp-large) {
+        // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    > li {
+        background-color: $cl-gray-xlight;
+        padding:1rem;
+        color: $cl-body-font-color;
+    }
+}
