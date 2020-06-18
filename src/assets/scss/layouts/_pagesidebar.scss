@@ -12,14 +12,9 @@
     overflow-y: auto;
     transition: left .2s ease-in;
 
-
-
-
     @include breakpoint($bp-tablet) {
         left:0;
     }
-
-
 }
 
 html.sidebar-is-open .pagesidebar {
@@ -29,10 +24,9 @@ html.sidebar-is-open .pagesidebar {
 
 .js-sidebarclose {
     display: none;
-    position: relative;
     z-index: 1001;
     position: fixed;
-    right:1rem;
+    left: calc(100vw - 7rem);
     top:1rem;
     html.sidebar-is-open & {
         display: inline-block;
