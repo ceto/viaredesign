@@ -1,0 +1,43 @@
+.sidemenu {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-content: stretch;
+    
+
+    color: $cl-gray-light;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    text-align: center;
+    font-size: .75rem;
+    height: 100%;
+    min-height: 40rem;
+
+    li {
+        flex-grow: 1;
+
+    
+        a {
+
+
+            display: block;
+            text-decoration: none;
+            padding:1em 1.5em;
+            // color:inherit;
+            &:hover, &:focus {
+                background-color: $cl-primary;
+                color:#fff;
+            }
+            img {
+                height: 3rem;
+                max-width: #{$globalsidebarwidth/2};
+                display: block;
+                margin: 0 auto .5rem;
+            }
+        }
+    }
+
+}

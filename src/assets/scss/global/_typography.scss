@@ -58,7 +58,7 @@ p.attribution {
     padding: 0.875em 1.25em 0.75em;
     color: $white;
     background-color: $cl-primary;
-    border-radius: 0.333em;
+    // border-radius: 0.333em;
     text-decoration: none;
     font-weight: $fw-black;
     letter-spacing: 0.05em;
@@ -67,7 +67,7 @@ p.attribution {
     text-align: center;
     font-size: .9375rem;
     border: 2px solid transparent;
-    box-shadow: 0em .5em .25em -.5em rgba(#000,.75);
+    // box-shadow: 0em .5em .25em -.5em rgba(#000,.75);
 
     &:hover,
     &:focus {
@@ -87,7 +87,9 @@ p.attribution {
             color: $cl-primary;
         }
     }
-
+    &.small {
+        font-size: .75rem;
+    }
     &.large {
         font-size: 1rem;
     }

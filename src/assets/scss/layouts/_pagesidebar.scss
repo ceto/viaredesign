@@ -7,8 +7,10 @@
     bottom:0;
     height:100%;
     width:#{$globalsidebarwidth};
-    padding: 1rem;
+    padding: 0 0;
     z-index: 1000;
+    overflow-y: auto;
+    transition: left .2s ease-in;
 
 
 
@@ -16,4 +18,24 @@
     @include breakpoint($bp-tablet) {
         left:0;
     }
+
+
 }
+
+html.sidebar-is-open .pagesidebar {
+    left:0;
+}
+
+
+.js-sidebarclose {
+    display: none;
+    position: relative;
+    z-index: 1001;
+    position: fixed;
+    right:1rem;
+    top:1rem;
+    html.sidebar-is-open & {
+        display: inline-block;
+    }
+}
+

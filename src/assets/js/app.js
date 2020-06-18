@@ -15,3 +15,13 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+
+$('.js-sidebartoggler').on('click', function(e) {
+    $('html').toggleClass('sidebar-is-open');
+});
+$('.js-sidebarclose').on('click', function(e) {
+    $('html').removeClass('sidebar-is-open');
+});
+
+

@@ -13,12 +13,13 @@ $global-flexbox: true;
 @import 'global/typography';
 @import 'layouts/pagewrap';
 @import 'layouts/pagesidebar';
+@import 'components/menu';
 @import 'components/postcard';
 
 
 
-// @import 'settings';
-// @import 'foundation';
+@import 'settings';
+@import 'foundation';
 // @import 'motion-ui';
 
 // // Global styles
@@ -73,7 +74,7 @@ $global-flexbox: true;
 // // Helpers
 // @include foundation-float-classes;
 // @include foundation-flex-classes;
-// @include foundation-visibility-classes;
+@include foundation-visibility-classes;
 // // @include foundation-prototype-classes;
 
 // // Motion UI
