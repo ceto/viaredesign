@@ -1,26 +1,32 @@
 .siteheader {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    position: relative;
+    z-index: 10000;
+    background-color: #fff;
+    height:$globalheaderheight;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    overflow: initial;
+    // margin-left: -$globalsidebarwidth;
+
+}
+
+
+.siteheader__brand {
     position: absolute;
-    z-index: 1;
-    overflow: visible;
+    z-index: 10001;
+    left:-$globalsidebarwidth;
+    display: flex;
+    height: 100%;
+    background-color: inherit;
+    width: $globalsidebarwidth;
+    margin-right: $globalsidebarwidth;
 
-}
+    
+    // width: 100%;
+    img {
+        width:66%;
+        margin:0 auto;
 
-.siteheader__logoblock {
-    align-self: flex-start;
-}
-
-.sitelogo {
-   display: block;
-   max-width: calc(6rem + 4.5vw);
-   min-width: 7rem;
-   margin-right: 1rem;
-}
-
-.menutoggler {
-    @include hamburger($white, $cl-primary, 25px, 20px, 3px, 3);
+    }
 }

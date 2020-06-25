@@ -24,7 +24,7 @@ html.sidebar-is-open .pagesidebar {
 
 .js-sidebarclose {
     display: none;
-    z-index: 1001;
+    z-index: 1002;
     position: fixed;
     left: calc(100vw - 7rem);
     top:1rem;
@@ -33,3 +33,23 @@ html.sidebar-is-open .pagesidebar {
     }
 }
 
+.pagesidebar__brand {
+    display: flex;
+    // text-align: center;
+    // align-items: center;
+    // background-color: #fff;
+    height:$globalheaderheight;
+    // width: 100%;
+    &:hover, &:focus {
+        img {
+            opacity: 1;
+        }
+    }
+    img {
+        width:60%;
+        margin:0 auto;
+        opacity: .75;
+
+
+    }
+}

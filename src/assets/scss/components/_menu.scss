@@ -1,5 +1,5 @@
 .sidemenu {
-    margin:0;
+    margin:0 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -12,32 +12,69 @@
     text-transform: uppercase;
     font-weight: $fw-bold;
     text-align: center;
-    font-size: .75rem;
-    height: 100%;
+    font-size: .666rem;
+    height: calc(100% - #{$globalheaderheight});
     min-height: 40rem;
 
     li {
         flex-grow: 1;
-
     
         a {
 
 
             display: block;
             text-decoration: none;
-            padding:1em 1.5em;
-            // color:inherit;
+            padding:1em 5% 1em 5%; 
+            width:100%;
             &:hover, &:focus {
                 background-color: $cl-primary;
                 color:#fff;
+                img {
+                    filter: brightness(3);
+                }
             }
             img {
-                height: 3rem;
-                max-width: #{$globalsidebarwidth/2};
+                height: 2.75em;
+                max-width: #{$globalsidebarwidth/3};
                 display: block;
-                margin: 0 auto .5rem;
+                margin: 0 auto .5em;
             }
         }
     }
 
+}
+
+.mainmenu {
+    margin:0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+    //text-align: center;
+    line-height: 1.2;
+    font-weight: $fw-bold;
+    @include breakpoint($bp-large) {
+        font-size: .875rem;
+    }
+    @include breakpoint($bp-xxlarge) {
+        font-size: .9375rem;
+    }
+    @include breakpoint($bp-xxxlarge) {
+        font-size: 1rem;
+    }
+    li {
+        a {
+            text-decoration: none;
+            padding:.5rem;
+            display: inline-block;
+            &:hover, &:focus {
+                color: $cl-primary;
+            }
+        }
+    }
 }
