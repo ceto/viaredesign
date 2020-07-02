@@ -21,38 +21,17 @@
                     </div>
                     <div class="vcard__bottom">
                         <div class="vcard__data">
-                            <br>
                             <ul class="paramlist">
-                                <li>
-                                    <div class="paramcard">
-                                        <img src="{{root}}assets/iconcollection/furgon.svg" alt="">
-                                        <h3>Teljesítmény</h3>
-                                        <p>lorem ipsum</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="paramcard">
-                                        <img src="{{root}}assets/iconcollection/minibusz.svg" alt="">
-                                        <h3>Motor</h3>
-                                        <p>dolor lorem ipsum</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="paramcard">
-                                        <img src="{{root}}assets/iconcollection/kisteherauto.svg" alt="">
-                                        <h3>Raktér mérete</h3>
-                                        <p>lorem ipsum</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="paramcard">
-                                        <img src="{{root}}assets/iconcollection/teherauto.svg" alt="">
-                                        <h3>Lorem ipsum</h3>
-                                        <p>sit amet 3.5T</p>
-                                    </div>
-                                </li>
+                                {{#each params}}
+                                    <li>
+                                        <div class="paramcard">
+                                            <img src="{{root}}assets/iconcollection/logo.svg" alt="">
+                                            <h3>{{@key}}</h3>
+                                            <p>{{ this }}</p>
+                                        </div>
+                                    </li>
+                                {{/each}}
                             </ul>
-                            <br>
                         </div>
                         <div class="vcard__actions">
                             <a href="" class="button small">Ajánlatkérés</a>

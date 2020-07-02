@@ -3,6 +3,12 @@
         "title": "Kögel Cargo",
         "shortdesc": "A legmegbízhatóbb nagy rakodóterű, ponyvás félpótkocsi.",
         "date": "2014",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás": "1.5 T",
+            "Terhelt össztömeg": "3.2 T",
+            "Raktér mérete": "17m"
+        },
         "info": "Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur adipisicing elit. Quod ipsam accusamus unde dolore neque repudiandae, saepe molestias.",
         "img": "sample_01.jpg",
         "img_width": "2560",
@@ -14,7 +20,12 @@
         "title": "Citroen Jumper",
         "shortdesc": "Zárt rakodóterű ponyvás furgon.",
         "date": "2016",
-        "info": "Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "params": {
+            "Felépítmény": "Ponyvás furgon",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Motor": "110 - 160 LE"
+        },
+        "info": "Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_02.jpg",
         "img_width": "2560",
         "img_height": "1707",
@@ -25,6 +36,12 @@
         "title": "Fiat Ducatto",
         "shortdesc": "Lorem visszhang kisteherautó",
         "date": "2020",
+        "params": {
+            "Felépítmény": "Hűtős félpótkocsi",
+            "Teherbírás / Terhelt össztömeg": "0,95 - 1.5 T / 2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "160 LE"
+        },
         "info": "Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_03.jpg",
         "img_width": "5120",
@@ -36,7 +53,14 @@
         "title": "IVECO Daily 2.2T",
         "shortdesc": "Lorem ponyvás nyerges vontató",
         "date": "2016",
-        "info": "Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "params": {
+            "Felépítmény": "Platós kisteherautó",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Terhelt össztömeg": "2.8 T",
+            "Raktér mérete": "17 m",
+            "Motor": "110 LE"
+        },
+        "info": "Reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_04.jpg",
         "img_width": "5120",
         "img_height": "2880",
@@ -44,10 +68,14 @@
         "url": "#"
     },
     {
-        "title": "Sit amet lorem ipsum",
-        "shortdesc": "Sanyi ipsum",
+        "title": "Mercedes-Benz Actros",
+        "shortdesc": "Lorem ipsum hagyományos nyerges vontató",
         "date": "2021",
-        "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
+        "params": {
+            "Felépítmény": "Emelőkaros hulladékszállító",
+            "Teherbírás": "0,95 - 1.5 T"
+        },
+        "info": "Molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_05.jpg",
         "img_width": "5120",
         "img_height": "2880",
@@ -55,9 +83,16 @@
         "url": "#"
     },
     {
-        "title": "Lorem Sit amet lorem ipsum",
-        "shortdesc": "Echo ipsum",
+        "title": "Volvo FH 460",
+        "shortdesc": "Legmagasabb felszereltségű nyerges vontató",
         "date": "2020",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Terhelt össztömeg": "2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "110 - 160 LE"
+        },
         "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_06.jpg",
         "img_width": "2000",
@@ -69,6 +104,13 @@
         "title": "Filmesgyakornok program",
         "shortdesc": "Filmalap",
         "date": "2016",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Terhelt össztömeg": "2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "110 - 160 LE"
+        },
         "info": "Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_07.jpg",
         "img_width": "5120",
@@ -77,9 +119,15 @@
         "url": "#"
     },
     {
-        "title": "Sit amet lorem ipsum",
+        "title": "MAN TGM 12",
         "shortdesc": "Lorem visszhang",
         "date": "2020",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás / Terhelt össztömeg": "0,95 - 1.5 T, 2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "110 - 160 LE"
+        },
         "info": "Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_08.jpg",
         "img_width": "5120",
@@ -91,6 +139,13 @@
         "title": "Program Magyarországon",
         "shortdesc": "Filmalap",
         "date": "2016",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Terhelt össztömeg": "2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "110 - 160 LE"
+        },
         "info": "Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_09.jpg",
         "img_width": "5335",
@@ -102,6 +157,13 @@
         "title": "Sit amet lorem ipsum",
         "shortdesc": "Sanyi ipsum",
         "date": "2021",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Terhelt össztömeg": "2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "110 - 160 LE"
+        },
         "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_10.jpg",
         "img_width": "2560",
@@ -113,6 +175,13 @@
         "title": "Lorem Sit amet lorem ipsum",
         "shortdesc": "Echo ipsum",
         "date": "2020",
+        "params": {
+            "Felépítmény": "Zárt áruszállító furgon",
+            "Teherbírás": "0,95 - 1.5 T",
+            "Terhelt össztömeg": "2.8 -3.2 T",
+            "Raktér mérete": "8 - 17m",
+            "Motor": "110 - 160 LE"
+        },
         "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
         "img": "sample_11.jpg",
         "img_width": "2000",

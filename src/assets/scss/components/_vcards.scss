@@ -9,7 +9,7 @@
 }
 
 .vcard {
-    background-color: $cl-gray-xlight;
+    background-color: #fff;
     color: $cl-body-font-color;
     display: flex;
     flex-wrap: nowrap;
@@ -41,19 +41,25 @@
     justify-content: space-between;
     padding: 1rem 1rem;
     @include breakpoint(large) {
-        min-width:66%;
+        min-width:60%;
     }
 }
-
+.vcard__head {
+    border-bottom: 1px solid $cl-gray-light;
+    margin:0 0 .5rem 0;
+    padding:0 0 .5rem 0;
+}
 .vcard__maintitle {
     margin:0;
     text-transform: uppercase;
-    color: $cl-primary;
-    font-size:1.75rem
+    // color: $cl-primary;
+    font-size:1.75rem;
+    line-height: 1.2;
 }
 .vcard__shortdesc {
     font-weight: $fw-bold;
-    margin:0 0 .5em;
+    margin:0 0;
+    // display: none;
 }
 
 .vcard__content {
