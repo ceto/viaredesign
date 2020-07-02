@@ -1,0 +1,65 @@
+<ul class="vcardlist">
+    {{#each vehicles}}
+        <li>
+            <article class="vcard">
+                <div class="vcard__peak">
+                    <figure class="vcard__mainfig">
+                        <a href=""><img width="{{ img_width }}" height="{{ img_height }}" src="http://brickhome.szabogabi.com/assets/img/slides/{{ img }}" alt=""></a>
+                    </figure>
+                </div>
+                <div class="vcard__tail">
+                    <header class="vcard__head">
+                        <h3 class="vcard__maintitle">
+                            {{ title }}
+                        </h3>
+                        <p class="vcard__shortdesc">
+                            {{ shortdesc }}
+                        </p>
+                    </header>
+                    <div class="vcard__content">
+                        {{ info }}
+                    </div>
+                    <div class="vcard__bottom">
+                        <div class="vcard__data">
+                            <br>
+                            <ul class="paramlist">
+                                <li>
+                                    <div class="paramcard">
+                                        <img src="{{root}}assets/iconcollection/furgon.svg" alt="">
+                                        <h3>Teljesítmény</h3>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="paramcard">
+                                        <img src="{{root}}assets/iconcollection/minibusz.svg" alt="">
+                                        <h3>Motor</h3>
+                                        <p>dolor lorem ipsum</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="paramcard">
+                                        <img src="{{root}}assets/iconcollection/kisteherauto.svg" alt="">
+                                        <h3>Raktér mérete</h3>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="paramcard">
+                                        <img src="{{root}}assets/iconcollection/teherauto.svg" alt="">
+                                        <h3>Lorem ipsum</h3>
+                                        <p>sit amet 3.5T</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="vcard__actions">
+                            <a href="" class="button small">Ajánlatkérés</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </li>
+    {{/each}}
+</ul>
