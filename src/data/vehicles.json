@@ -1,6 +1,6 @@
 [
     {
-        "id": "101",
+        "id": "100",
         "title": "Kögel Cargo",
         "shortdesc": "A legmegbízhatóbb nagy rakodóterű, ponyvás félpótkocsi.",
         "date": "2014",
@@ -18,7 +18,7 @@
         "url": "#"
     },
     {
-        "id": "102",
+        "id": "101",
         "title": "Citroen Jumper",
         "shortdesc": "Zárt rakodóterű ponyvás furgon.",
         "date": "2016",
@@ -35,7 +35,7 @@
         "url": "#"
     },
     {
-        "id": "103",
+        "id": "102",
         "title": "Fiat Ducatto",
         "shortdesc": "Lorem visszhang kisteherautó",
         "date": "2020",

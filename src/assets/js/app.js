@@ -29,5 +29,6 @@ $('.js-sidebarclose').on('click', function(e) {
 $('.vcard [data-tabs-target]').on('click', function(event) {
     $('#' + $(this).attr('data-tabs-target')).addClass('is-active'); 
     $(this).closest('.tabs-panel').removeClass('is-active');
+    $(this).closest('.vcard').toggleClass('is-open');
 });
 
