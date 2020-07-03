@@ -9,26 +9,14 @@ $global-flexbox: true;
 
 @include foundation-normalize();
 
-@import 'global/base';
-@import 'global/typography';
-@import 'layouts/pagewrap';
-@import 'layouts/pagesidebar';
-@import 'layouts/siteheader';
-@import 'components/menu';
-@import 'components/postcard';
-@import 'components/vcards';
-@import 'components/paramcard';
-
-
-
 @import 'settings';
 @import 'foundation';
 // @import 'motion-ui';
 
 // // Global styles
 // @include foundation-global-styles;
-// @include foundation-forms;
-// @include foundation-typography;
+@include foundation-forms;
+@include foundation-typography;
 
 // // Grids (choose one)
 // @include foundation-xy-grid-classes;
@@ -58,7 +46,7 @@ $global-flexbox: true;
 // @include foundation-media-object;
 // @include foundation-orbit;
 // @include foundation-responsive-embed;
-// @include foundation-tabs;
+@include foundation-tabs;
 // @include foundation-thumbnail;
 // // Menu-based containers
 // @include foundation-menu;
@@ -83,3 +71,14 @@ $global-flexbox: true;
 // // Motion UI
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
+
+@import 'global/base';
+@import 'global/typography';
+@import 'layouts/pagewrap';
+@import 'layouts/pagesidebar';
+@import 'layouts/siteheader';
+@import 'components/menu';
+@import 'components/postcard';
+@import 'components/vcards';
+@import 'components/paramcard';

@@ -35,10 +35,10 @@
 }
 
 .vcard__tail {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: nowrap;
+    // flex-direction: column;
+    // justify-content: space-between;
     padding: 1rem 1rem;
     @include breakpoint(large) {
         min-width:60%;
@@ -72,5 +72,15 @@
 .vcard__actions {
     .button {
         margin:0;
+    }
+}
+
+
+.vcard__tabs-content {
+    border: none;
+
+    .tabs-panel {
+        padding:0 0;
+       
     }
 }

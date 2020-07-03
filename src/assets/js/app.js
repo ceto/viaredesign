@@ -20,8 +20,14 @@ $(document).foundation();
 $('.js-sidebartoggler').on('click', function(e) {
     $('html').toggleClass('sidebar-is-open');
 });
+
 $('.js-sidebarclose').on('click', function(e) {
     $('html').removeClass('sidebar-is-open');
 });
 
+
+$('.vcard [data-tabs-target]').on('click', function(event) {
+    $('#' + $(this).attr('data-tabs-target')).addClass('is-active'); 
+    $(this).closest('.tabs-panel').removeClass('is-active');
+});
 
