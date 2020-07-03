@@ -91,46 +91,112 @@
                                 A legmegbízhatóbb nagy rakodóterű, ponyvás félpótkocsi.
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur adipisicing elit. Quod ipsam accusamus unde dolore neque repudiandae, saepe molestias.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>17m</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-101">
+                                <div class="vcard__content">
+                                    Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur adipisicing elit. Quod ipsam accusamus unde dolore neque repudiandae, saepe molestias.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>17m</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-101" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-101">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-101" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -150,39 +216,105 @@
                                 Zárt rakodóterű ponyvás furgon.
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Ponyvás furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-102">
+                                <div class="vcard__content">
+                                    Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Ponyvás furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-102" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-102">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-102" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -202,46 +334,112 @@
                                 Lorem visszhang kisteherautó
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Hűtős félpótkocsi</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás / Terhelt össztömeg</h3>
-                                                <p>0,95 - 1.5 T / 2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-103">
+                                <div class="vcard__content">
+                                    Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Hűtős félpótkocsi</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás / Terhelt össztömeg</h3>
+                                                    <p>0,95 - 1.5 T / 2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-103" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-103">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-103" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -261,53 +459,119 @@
                                 Lorem ponyvás nyerges vontató
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Platós kisteherautó</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>2.8 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>17 m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-103">
+                                <div class="vcard__content">
+                                    Reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Platós kisteherautó</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>2.8 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>17 m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-103" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-103">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-103" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -327,32 +591,98 @@
                                 Lorem ipsum hagyományos nyerges vontató
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Emelőkaros hulladékszállító</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-104">
+                                <div class="vcard__content">
+                                    Molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Emelőkaros hulladékszállító</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-104" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-104">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-104" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -372,53 +702,119 @@
                                 Legmagasabb felszereltségű nyerges vontató
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-105">
+                                <div class="vcard__content">
+                                    Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-105" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-105">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-105" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -438,53 +834,119 @@
                                 Filmalap
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-106">
+                                <div class="vcard__content">
+                                    Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-106" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-106">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-106" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -504,46 +966,112 @@
                                 Lorem visszhang
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás / Terhelt össztömeg</h3>
-                                                <p>0,95 - 1.5 T, 2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-107">
+                                <div class="vcard__content">
+                                    Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás / Terhelt össztömeg</h3>
+                                                    <p>0,95 - 1.5 T, 2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-107" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-107">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-107" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -563,53 +1091,119 @@
                                 Filmalap
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-108">
+                                <div class="vcard__content">
+                                    Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-108" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-108">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-108" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -629,53 +1223,119 @@
                                 Sanyi ipsum
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-109">
+                                <div class="vcard__content">
+                                    Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-109" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-109">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-109" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
@@ -695,53 +1355,119 @@
                                 Echo ipsum
                             </p>
                         </header>
-                        <div class="vcard__content">
-                            Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
-                        </div>
-                        <div class="vcard__bottom">
-                            <div class="vcard__data">
-                                <ul class="paramlist">
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Felépítmény</h3>
-                                                <p>Zárt áruszállító furgon</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Teherbírás</h3>
-                                                <p>0,95 - 1.5 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Terhelt össztömeg</h3>
-                                                <p>2.8 -3.2 T</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Raktér mérete</h3>
-                                                <p>8 - 17m</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="paramcard">
-                                                <img src="assets/iconcollection/logo.svg" alt="">
-                                                <h3>Motor</h3>
-                                                <p>110 - 160 LE</p>
-                                            </div>
-                                        </li>
-                                </ul>
+                        <div class="tabs-content vcard__tabs-content">
+                            <div class="tabs-panel is-active" id="tabdata-110">
+                                <div class="vcard__content">
+                                    Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.
+                                </div>
+                                <div class="vcard__data">
+                                    <ul class="paramlist">
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Felépítmény</h3>
+                                                    <p>Zárt áruszállító furgon</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Teherbírás</h3>
+                                                    <p>0,95 - 1.5 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Terhelt össztömeg</h3>
+                                                    <p>2.8 -3.2 T</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Raktér mérete</h3>
+                                                    <p>8 - 17m</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="paramcard">
+                                                    <img src="assets/iconcollection/logo.svg" alt="">
+                                                    <h3>Motor</h3>
+                                                    <p>110 - 160 LE</p>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                                <div class="vcard__actions">
+                                    <button data-tabs-target="tabform-110" class="button small">Ajánlatkérés</button>
+                                </div>
                             </div>
-                            <div class="vcard__actions">
-                                <a href="" class="button small">Ajánlatkérés</a>
+                            <div class="tabs-panel" id="tabform-110">
+    
+                                <form data-abide novalidate>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell small-12">
+                                          <label>Number Required
+                                            <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+                                            <span class="form-error">
+                                              Yo, you had better fill this out, it's required.
+                                            </span>
+                                          </label>
+                                        <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>Regular Expression
+                                            <input type="text" placeholder="https://get.foundation" pattern="url">
+                                          </label>
+                                        </div>
+                                        <div class="cell large-6">
+                                          <label>Website Pattern
+                                            <input type="text" placeholder="https://get.foundation or get.foundation" pattern="website">
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <div class="cell large-6">
+                                          <label>European Cars, Choose One.
+                                            <select id="select" required>
+                                              <option value=""></option>
+                                              <option value="volvo">Volvo</option>
+                                              <option value="saab">Saab</option>
+                                              <option value="mercedes">Mercedes</option>
+                                              <option value="audi">Audi</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                        <fieldset class="cell large-6">
+                                          <legend>Check these out</legend>
+                                          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                          <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                    <div class="grid-container">
+                                      <div class="grid-x grid-margin-x">
+                                        <fieldset class="cell large-12">
+                                          <button class="button" type="submit" value="Submit">Submit</button>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </form>                            <button data-tabs-target="tabdata-110" class="button hollow small">Mégse</button>
                             </div>
                         </div>
+                        
                     </div>
                 </article>
             </li>
