@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'what-input';
+import 'slick-carousel';
 
 // Foundation JS relies on a global variable. In ES6, all imports are hoisted
 // to the top of the file so if we used `import` to import Foundation,
@@ -26,9 +27,30 @@ $('.js-sidebarclose').on('click', function(e) {
 });
 
 
-$('.vcard [data-tabs-target]').on('click', function(event) {
-    $('#' + $(this).attr('data-tabs-target')).addClass('is-active'); 
-    $(this).closest('.tabs-panel').removeClass('is-active');
+$('.vcard .js-startform').on('click', function(event) {
     $(this).closest('.vcard').toggleClass('is-open');
 });
 
+
+const $vcardcarousel = $('.vcardcarousel');
+$vcardcarousel
+    .on("init", function (event, slick) {
+    })
+    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $(slick).closest('.vcard').toggleClass('is-open');
+    })
+    .on('afterChange', function (event, slick, currentSlide) {
+    })
+    .slick({
+        arrows: false,
+        dots: false,
+        // prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#icon-caret-left"></use></svg></button>',
+        // nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#icon-caret-right"></use></svg></button>',
+        // appendArrows: '.carouselwrap',
+        infinite: false,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        // fade: true,
+
+
+    });

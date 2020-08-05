@@ -39,25 +39,19 @@
             text-shadow: none;
         }
     }
-    .vcard.is-open & {
-        .vcard__head {
-            display: block;
-        }
-        @include breakpoint(large) {
-            border-right: .25rem solid $cl-gray-dark;
-        } 
-    }
 
 }
 .vcard__mainfig {
     margin:0;
     padding:0;
     height: 100%;
+    overflow: hidden;
+    background-color: $cl-primary;
     // border-right: .25rem solid $cl-gray-dark;
     // border-right: 1rem solid #fff;
     .vcard.is-open & {
+        // height: 20rem;
     } 
-
 
     img {
 
@@ -66,10 +60,11 @@
         display: block;
         object-fit: cover;
         .vcard.is-open & {
-           
-            @include breakpoint(large) {
-                height:18rem;
-            }
+            filter: blur(15px) brightness(1) grayscale(1);
+            mix-blend-mode: darken;
+            transform: scale(1.125);
+            opacity: .75;
+
         } 
     }
 }
@@ -129,4 +124,14 @@
         padding:0 0;
        
     }
+}
+
+.vcardquote {
+    background-color: #fff;
+    color: $cl-body-font-color;
+    // padding: 1.25rem 1.25rem;
+}
+
+.vcardcarousel {
+    // background-color: #fff;
 }

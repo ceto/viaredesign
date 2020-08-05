@@ -82,3 +82,7 @@ $global-flexbox: true;
 @import 'components/postcard';
 @import 'components/vcards';
 @import 'components/paramcard';
+
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import "components/slick-theme";
+

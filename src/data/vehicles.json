@@ -11,9 +11,9 @@
             "Raktér mérete": "17m"
         },
         "info": "Onsectetur adipisicing elit. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur adipisicing elit. Quod ipsam accusamus unde dolore neque repudiandae, saepe molestias.",
-        "img": "sample_01.jpg",
-        "img_width": "2560",
-        "img_height": "1812",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1280",
+        "img_height": "1024",
         "figcaption": "Diam eget risus varius blandit sit amet non magna",
         "url": "#"
     },
@@ -28,9 +28,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_02.jpg",
-        "img_width": "2560",
-        "img_height": "1707",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1024",
+        "img_height": "760",
         "figcaption": "",
         "url": "#"
     },
@@ -46,9 +46,9 @@
             "Motor": "160 LE"
         },
         "info": "Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_03.jpg",
-        "img_width": "5120",
-        "img_height": "2751",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1280",
+        "img_height": "800",
         "figcaption": "",
         "url": "#"
     },
@@ -65,9 +65,9 @@
             "Motor": "110 LE"
         },
         "info": "Reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_04.jpg",
-        "img_width": "5120",
-        "img_height": "2880",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "800",
+        "img_height": "600",
         "figcaption": "Eget risus varius blandit sit amet non magna",
         "url": "#"
     },
@@ -81,9 +81,9 @@
             "Teherbírás": "0,95 - 1.5 T"
         },
         "info": "Molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_05.jpg",
-        "img_width": "5120",
-        "img_height": "2880",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1024",
+        "img_height": "640",
         "figcaption": "",
         "url": "#"
     },
@@ -100,9 +100,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_06.jpg",
-        "img_width": "2000",
-        "img_height": "1081",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1600",
+        "img_height": "1024",
         "figcaption": "",
         "url": "#"
     },
@@ -119,9 +119,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_07.jpg",
-        "img_width": "5120",
-        "img_height": "5120",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1280",
+        "img_height": "1280",
         "figcaption": "",
         "url": "#"
     },
@@ -137,9 +137,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Cxplicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_08.jpg",
-        "img_width": "5120",
-        "img_height": "2750",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1024",
+        "img_height": "1024",
         "figcaption": "",
         "url": "#"
     },
@@ -156,9 +156,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Consectetur adipisicing elit. Et hic ut aliquid ipsa ad, repellendus fugiat placeat, a reiciendis! Quis impedit soluta eveniet omnis autem expedita earum, vitae ducimus dolorum. Concidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_09.jpg",
-        "img_width": "5335",
-        "img_height": "3001",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1280",
+        "img_height": "1000",
         "figcaption": "",
         "url": "#"
     },
@@ -175,9 +175,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_10.jpg",
-        "img_width": "2560",
-        "img_height": "1863",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "800",
+        "img_height": "600",
         "figcaption": "",
         "url": "#"
     },
@@ -194,9 +194,9 @@
             "Motor": "110 - 160 LE"
         },
         "info": "Aspernatur est, explicabo beatae consequatur ut sequi iure, molestias repudiandae quis porro amet nemo saepe a perspiciatis. Eaque iste reprehenderit, incidunt expedita, exercitationem suscipit illo voluptatem modi sequi aspernatur.",
-        "img": "sample_11.jpg",
-        "img_width": "2000",
-        "img_height": "2000",
+        "img": "https://source.unsplash.com/?truck,van",
+        "img_width": "1100",
+        "img_height": "700",
         "figcaption": "",
         "url": "#"
     }
