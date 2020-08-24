@@ -1,4 +1,5 @@
 .sidemenu {
+    position: relative;
     margin:0 0;
     padding: 0;
     list-style: none;
@@ -14,11 +15,15 @@
     text-align: center;
     font-size: .666rem;
     height: calc(100% - #{$globalheaderheight});
-    min-height: 40rem;
+    min-height: 32rem;
+    // max-height: 38rem;
+    transition: transform .2s ease-out;
+    &.is-open {
+        transform: translateX(-100%);
+    }
 
     li {
         flex-grow: 1;
-    
         a {
 
 
@@ -29,6 +34,9 @@
             &:hover, &:focus {
                 background-color: $cl-primary;
                 color:#fff;
+                &:after {
+                    color:#fff !important;
+                }
                 img {
                     filter: brightness(3);
                 }
@@ -40,8 +48,55 @@
                 margin: 0 auto .5em;
             }
         }
+        &.is-active > a {
+            background-color: $cl-primary;
+            color:#fff;
+            &:after {
+                color:#fff !important;
+            }
+            img {
+                filter: brightness(3);
+            }
+        }
+        &.has-submenu > a { 
+            position: relative;
+            &:after {
+                color: transparent;
+                content:"\232A";
+                display: inline-block;
+                position: absolute;
+                top:50%;
+                right:2.5%;
+                transform: translateY(-50%);
+            }
+        }
     }
 
+}
+.js-closesidemenu {
+    position: relative;
+    &:before {
+        content:"\2329";
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        left:5%;
+        transform: translateY(-50%);
+        
+    }
+}
+
+.sidemenu li ul {
+    @extend .sidemenu;
+    display: none;
+    position: absolute;
+    top:0;
+    left:100%;
+    width:100%;
+    height: 100%;
+}
+.sidemenu li.is-active a + ul {
+     display: block;
 }
 
 .mainmenu {

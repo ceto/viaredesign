@@ -1,67 +1,61 @@
 <ul class="vcardlist">
     {{#each vehicles}}
         <li>
-
+            <div id="vcardcarousel-{{@index}}" class="vcardcarousel">
+                <div>
                     <article class="vcard">
                         <div class="vcard__peak">
                             <figure class="vcard__mainfig">
                                 <a href=""><img width="{{ img_width }}" height="{{ img_height }}" src="https:/source.unsplash.com/{{ img_width }}x{{ img_height }}/?truck,van,kombi" alt=""></a>
                             </figure>
+                        </div>
+                        <div class="vcard__tail">
                             <header class="vcard__head">
                                 <h3 class="vcard__maintitle">
                                     {{ title }}
                                 </h3>
-                                <p class="vcard__shortdesc">
+                                <!-- <p class="vcard__shortdesc">
                                     {{ shortdesc }}
-                                </p>
+                                </p> -->
                             </header>
-                        </div>
-                        <div class="vcard__tail">
-                            <div class="vcardcarousel">
-                                <div>
-                                    <header class="vcard__head">
-                                        <h3 class="vcard__maintitle">
-                                            {{ title }}
-                                        </h3>
-                                        <p class="vcard__shortdesc">
-                                            {{ shortdesc }}
-                                        </p>
-                                    </header>
-                                    <div class="vcard__content">
-                                        {{ info }}
-                                    </div>
-                                    <div class="vcard__data">
-                                        <ul class="paramlist">
-                                            {{#each params}}
-                                                <li>
-                                                    <div class="paramcard">
-                                                        <img src="{{root}}assets/iconcollection/logo.svg" alt="">
-                                                        <h3>{{@key}}</h3>
-                                                        <p>{{ this }}</p>
-                                                    </div>
-                                                </li>
-                                            {{/each}}
-                                        </ul>
-                                    </div>
-                                    <div class="vcard__actions">
-                                        <button class="button small js-startform">Ajánlatkérés</button>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="vcardquote">
-                                        <header class="vcard__head">
-                                            <h3 class="vcard__maintitle">
-                                                Ajánlatkérés
-                                            </h3>
-                                            <p class="vcard__shortdesc">
-                                                {{ title }}
-                                            </p>
-                                        </header>
-                                        {{> vcardform }}
-                                    </div>
-                                </div>
+                            <div class="vcard__content">
+                                {{ info }}
+                            </div>
+                            <div class="vcard__data">
+                                <ul class="paramlist">
+                                    {{#each params}}
+                                        <li>
+                                            <div class="paramcard">
+                                                <img src="{{root}}assets/iconcollection/logo.svg" alt="">
+                                                <h3>{{@key}}</h3>
+                                                <p>{{ this }}</p>
+                                            </div>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                            <div class="vcard__actions">
+                                <button class="button small js-startvquoteform" data-ctarget="vcardcarousel-{{@index}}">Ajánlatkérés</button>
+                            </div>
                         </div>
                     </article>
+                </div>
+                <div>
+                    <div class="vcardquote">
+                        <header class="vcard__head">
+                            <h3 class="vcard__maintitle">
+                                Ajánlatkérés
+                            </h3>
+                            <p class="vcard__shortdesc">
+                                {{ title }}
+                            </p>
+                        </header>
+                        {{> vcardform }}
+                        <button class="button small light js-closevquoteform" data-ctarget="vcardcarousel-{{@index}}">Mégsem</button>
+
+                    </div>
+                </div>
+            </div>
         </li>
     {{/each}}
 </ul>

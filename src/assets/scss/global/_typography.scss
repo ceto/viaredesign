@@ -87,6 +87,27 @@ p.attribution {
             color: $cl-primary;
         }
     }
+
+    &.dark {
+        background-color: $cl-gray-dark;
+
+
+        &:hover,
+        &:focus {
+            background-color: darken($cl-gray-dark, 10%);
+        }
+    }
+
+    &.light {
+        background-color: $cl-gray-light;
+        // color: $cl-body-font-color;
+
+        &:hover,
+        &:focus {
+            background-color: darken($cl-gray-light, 10%);
+        }
+    }
+
     &.small {
         font-size: .75rem;
     }

@@ -27,8 +27,13 @@ $('.js-sidebarclose').on('click', function(e) {
 });
 
 
-$('.vcard .js-startform').on('click', function(event) {
-    $(this).closest('.vcard').toggleClass('is-open');
+$('.js-startvquoteform').on('click', function(event) {
+    $(this).closest('.vcard').addClass('is-open');
+    $('#' + $(this).attr('data-ctarget')).slick('slickNext');
+});
+$('.js-closevquoteform').on('click', function(event) {
+    $(this).closest('li').find('.vcard').removeClass('is-open');
+    $('#' + $(this).attr('data-ctarget')).slick('slickPrev');
 });
 
 
@@ -50,7 +55,32 @@ $vcardcarousel
         infinite: false,
         slidesToShow: 1,
         adaptiveHeight: true,
+        touchMove: false,
+        swipe: false,
         // fade: true,
 
 
     });
+
+$(document).ready(function(){
+    $('.sidemenu > li').each( function(index) {
+        if ( $(this).find('ul').length > 0) {
+            $(this).addClass('has-submenu');
+        }
+    });
+});
+
+$('.sidemenu > li > a').on('click', function(e) {
+    $('.sidemenu > li').removeClass('is-active');
+    $(this).closest('li').addClass('is-active');
+    if ( $(this).closest('li').find('ul').length > 0) {
+        e.preventDefault();
+        $(this).closest('.sidemenu').addClass('is-open');
+    }
+});
+
+$('.js-closesidemenu').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.sidemenu').removeClass('is-open');
+    // $(this).closest('.sidemenu > li').removeClass('is-active');
+})
