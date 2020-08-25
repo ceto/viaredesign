@@ -1,19 +1,26 @@
 .sitefooter {
-    padding-top: calc(2vw + .5rem);
-    padding-bottom: calc(2vw + .5rem);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .pagewrap;
+    background-color: $cl-gray-dark;
+    color: $cl-gray-light;
+    @include breakpoint(95em) {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    } 
 
-    background-color: darken($cl-secondary, 30%);
-    padding-top: .75rem;
-    padding-bottom: .75rem;
 }
 
+.footerwidgetgrid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: rem-calc($layout-gutter-width * 1);
+    grid-row-gap: rem-calc($layout-gutter-width * 1);
+    grid-auto-rows: 1fr;
 
-
-.sitelogo {
-   .sitefooter & {
-    max-width: 5rem;
-   }
+    @include breakpoint($bp-medium) {
+        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    
+    }
 }

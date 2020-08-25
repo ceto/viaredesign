@@ -1,4 +1,7 @@
 .siteheader {
+    @extend .pagewrap;
+    padding-top: 0;
+    padding-bottom: 0;
     position: relative;
     z-index: 10000;
     background-color: #fff;
@@ -8,6 +11,10 @@
     width: 100%;
     overflow: initial;
     // margin-left: -$globalsidebarwidth;
+    @include breakpoint(95em) {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    } 
 
 }
 
@@ -17,6 +24,7 @@
     z-index: 10001;
     left:-$globalsidebarwidth;
     display: flex;
+    align-items: center;
     height: 100%;
     background-color: inherit;
     width: $globalsidebarwidth;
@@ -25,7 +33,7 @@
     
     // width: 100%;
     img {
-        width:66%;
+        height:56.666%;
         margin:0 auto;
 
     }

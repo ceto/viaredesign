@@ -16,7 +16,7 @@ $global-flexbox: true;
 // // Global styles
 // @include foundation-global-styles;
 @include foundation-forms;
-@include foundation-typography;
+// @include foundation-typography;
 
 // // Grids (choose one)
 @include foundation-xy-grid-classes;
@@ -78,10 +78,14 @@ $global-flexbox: true;
 @import 'layouts/pagewrap';
 @import 'layouts/pagesidebar';
 @import 'layouts/siteheader';
+@import 'layouts/sitefooter';
 @import 'components/menu';
 @import 'components/postcard';
 @import 'components/vcards';
 @import 'components/paramcard';
+@import 'components/hero';
+@import 'components/widget';
+@import 'components/forms';
 
 @import 'node_modules/slick-carousel/slick/slick.scss';
 @import "components/slick-theme";

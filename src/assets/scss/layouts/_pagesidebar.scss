@@ -39,6 +39,8 @@ html.sidebar-is-open .pagesidebar {
     // align-items: center;
     // background-color: #fff;
     height:$globalheaderheight;
+    align-items: center;
+    // border-bottom: 1px solid rgba(#fff,.125);
     // width: 100%;
     &:hover, &:focus {
         img {
@@ -46,7 +48,7 @@ html.sidebar-is-open .pagesidebar {
         }
     }
     img {
-        width:60%;
+        height:56.666%;
         margin:0 auto;
         opacity: .75;
 

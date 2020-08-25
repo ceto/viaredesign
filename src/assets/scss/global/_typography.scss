@@ -153,18 +153,38 @@ ul.bulletlist {
 
 
 .sectitle {
-    color:inherit;
-    font-weight: $fw-light;
+    color:$cl-primary;
+    font-weight: $fw-black;
     line-height: 1.2;
     font-size: 2.5rem;
-    margin: 0 0 0;
+    margin: 0 0 .125em;
 
     span {
         font-weight: $fw-black;
-        color: $cl-primary;
+        color: #fff;
     }
 
     @include breakpoint($bp-tablet) {
         font-size: 3rem;
+    }
+
+    @include breakpoint($bp-xlarge) {
+        font-size: 3.5rem;
+    }
+}
+
+hr {
+    margin: 1rem auto;
+    max-width: rem-calc($layout-content);
+    height: 0;
+    border: none;
+    border-top: 2px solid rgba(#000, 0.25);
+    border-bottom: 2px solid rgba(#fff, 0.25);
+
+    &.fulldivider {
+        max-width: none;
+        margin: 0 auto;
+        border-top: 2px solid rgba(#000, 0.05);
+        border-bottom: 2px solid rgba(#fff, 0.05);
     }
 }

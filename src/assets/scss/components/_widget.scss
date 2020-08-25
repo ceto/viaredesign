@@ -1,0 +1,25 @@
+.widget__title {
+    // font-family: $fontsans;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin: 0 0 0.5em;
+}
+
+.widget__body {
+    // font-weight: $fw-bold;
+    .widget__title + & {
+        margin-top: 0.5rem;
+    }
+    p {
+        margin-bottom:.5em;
+        font-size: .875rem;
+    }
+}
+
+
+.widget--footer {
+    & + & {
+        margin-top:1.5rem;
+    }
+}
