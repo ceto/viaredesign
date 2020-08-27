@@ -171,6 +171,16 @@ ul.bulletlist {
     @include breakpoint($bp-xlarge) {
         font-size: 3.5rem;
     }
+
+    &.withlinea {
+        // margin-bottom: 0;
+        &:after {
+            content:'';
+            display:block;
+            border-top: 2px solid rgba(#000, 0.05);
+            border-bottom: 2px solid rgba(#fff, 0.05);
+        }
+    }
 }
 
 hr {

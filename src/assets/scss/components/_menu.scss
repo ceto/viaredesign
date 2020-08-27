@@ -151,3 +151,30 @@
 .footmenu {
     @extend .mainmenu;
 }
+
+.tabalikemenu {
+    list-style:none;
+    margin:0 0 0 0;
+    padding:0;
+    display: flex;
+    // justify-content: space-between;
+    font-size:.875rem;
+    line-height: 1.2;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    color: $cl-gray-light;
+    li {
+        &:not(:first-child) {
+            margin-left: .5em;
+        }
+        
+        a {
+            color:$cl-primary;
+            text-decoration: none;
+        }
+    }
+}
+
+li.tabalikemenu__title {
+    // margin-right: auto;
+}
