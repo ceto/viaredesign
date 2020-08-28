@@ -157,11 +157,12 @@ ul.bulletlist {
     font-weight: $fw-black;
     line-height: 1.2;
     font-size: 2.5rem;
-    margin: 0 0 .125em;
+    margin: 0 0;
 
     span {
-        font-weight: $fw-black;
-        color: #fff;
+        font-weight: $fw-normal;
+        // letter-spacing: -0.025em;
+        color: $cl-gray-light;
     }
 
     @include breakpoint($bp-tablet) {
@@ -175,10 +176,11 @@ ul.bulletlist {
     &.withlinea {
         // margin-bottom: 0;
         &:after {
+            transform: translateY(-.025em);
             content:'';
             display:block;
-            border-top: 2px solid rgba(#000, 0.05);
-            border-bottom: 2px solid rgba(#fff, 0.05);
+            border-top: 1px solid rgba(#000, 0.25);
+            border-bottom: 1px solid rgba(#fff, 0.25);
         }
     }
 }
