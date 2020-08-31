@@ -156,21 +156,33 @@ ul.bulletlist {
     color:$cl-primary;
     font-weight: $fw-black;
     line-height: 1.2;
-    font-size: 2.5rem;
+    font-size: 2.333rem;
     margin: 0 0;
+
+
+
 
     span {
         font-weight: $fw-normal;
         // letter-spacing: -0.025em;
         color: $cl-gray-light;
     }
+    > a {
+        text-decoration: none;
+        &:hover, &:focus {
+            color: lighten($cl-primary,5%);
+            span {
+                color:#fff;
+            }
+        }
+    }
 
     @include breakpoint($bp-tablet) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     @include breakpoint($bp-xlarge) {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     &.withlinea {
@@ -198,5 +210,41 @@ hr {
         margin: 0 auto;
         border-top: 2px solid rgba(#000, 0.05);
         border-bottom: 2px solid rgba(#fff, 0.05);
+    }
+}
+
+.catlist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin:0;
+    padding:0;
+    font-size: .666rem;
+    line-height: 1.2;
+    > li {
+        margin:.125em;
+        padding:0;
+        white-space: nowrap;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            display: inline-block;
+            background-color: $cl-gray-dark;
+            border-radius: 1em;
+            padding:.25em .75em;
+            letter-spacing: .025em;
+            color: $white;
+            font-weight: $fw-bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover, &:focus {
+                background-color: $cl-primary;
+                color:$white;
+                
+            }
+
+        }
     }
 }

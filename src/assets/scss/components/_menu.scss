@@ -118,10 +118,12 @@
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: flex-end;
+
     width:100%;
-    margin-left: -.5rem;
-    margin-right: -.5rem;
+    // margin-left: -.75rem;
+    margin-right: -.75rem;
     font-size: .75rem;
     text-transform: uppercase;
     //text-align: center;
@@ -139,7 +141,7 @@
     li {
         a {
             text-decoration: none;
-            padding:.5rem;
+            padding:.75rem;
             display: inline-block;
             &:hover, &:focus {
                 color: $cl-primary;

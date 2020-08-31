@@ -81,11 +81,15 @@ $global-flexbox: true;
 @import 'layouts/sitefooter';
 @import 'components/menu';
 @import 'components/postcard';
+@import 'components/promocard';
 @import 'components/vcards';
 @import 'components/paramcard';
 @import 'components/hero';
+@import 'components/cwibg';
 @import 'components/widget';
 @import 'components/forms';
+@import 'components/advantagecard';
+
 
 @import 'node_modules/slick-carousel/slick/slick.scss';
 @import "components/slick-theme";
