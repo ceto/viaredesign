@@ -10,9 +10,10 @@
     height:$globalheaderheight;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     overflow: initial;
-    // margin-left: -$globalsidebarwidth;
+    box-shadow: 0 2px 0 -1px $cl-gray-xlight;
+    margin-left: -$globalsidebarwidth;
     // @include breakpoint(95em) {
     //     padding-left: 7.5%;
     //     padding-right: 7.5%;
@@ -22,15 +23,16 @@
 
 
 .siteheader__brand {
-    position: absolute;
+    // position: absolute;
+
     // z-index: 10001;
-    left:-$globalsidebarwidth;
     display: flex;
     align-items: center;
     height: 100%;
     background-color: inherit;
     width: $globalsidebarwidth;
-    margin-right: $globalsidebarwidth;
+    // margin-right: $globalsidebarwidth;
+    flex-shrink: 0;
 
     
     // width: 100%;
