@@ -1,28 +1,29 @@
 .siteheader {
-    @extend .pagewrap;
+    // @extend .pagewrap;
     color:$cl-body-font-color;
+    background-color: $cl-body-background;
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
     z-index: 10000;
-    background-color: #fff;
+
     height:$globalheaderheight;
     display: flex;
     align-items: center;
     width: 100%;
     overflow: initial;
     // margin-left: -$globalsidebarwidth;
-    @include breakpoint(95em) {
-        padding-left: 7.5%;
-        padding-right: 7.5%;
-    } 
+    // @include breakpoint(95em) {
+    //     padding-left: 7.5%;
+    //     padding-right: 7.5%;
+    // } 
 
 }
 
 
 .siteheader__brand {
     position: absolute;
-    z-index: 10001;
+    // z-index: 10001;
     left:-$globalsidebarwidth;
     display: flex;
     align-items: center;

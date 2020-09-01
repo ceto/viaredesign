@@ -1,0 +1,134 @@
+.featpost {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // background-color: $cl-body-background;
+    // color:$cl-body-font-color;
+}
+
+.featpost__fig,
+.featpost__tail {
+    @include grid-width(12);
+}
+
+.featpost__fig {
+    margin:0;
+    padding:0;
+    @include breakpoint($bp-tablet) {
+        @include grid-width(4);
+    }
+    @include breakpoint($bp-xlarge) {
+        @include grid-width(6);
+    }
+}
+
+.featpost__fig img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featpost__tail {
+    padding:rem-calc($layout-gutter-width) 0;
+    position: relative;
+
+    @include breakpoint($bp-tablet) {
+        @include grid-width(8);
+        padding: 0 0 4rem rem-calc($layout-gutter-width);
+        padding-bottom:4rem;
+
+    }
+    @include breakpoint($bp-xlarge) {
+        @include grid-width(6);
+        // max-width: 42.5%;
+    }
+
+}
+
+.featpost__updated {
+    display: block;
+    //text-transform: uppercase;
+    font-size: 0.875rem;
+    margin: 0 0 0.25em;
+    line-height: 1;
+    min-height: 1.25rem;
+}
+
+.featpost__title {
+    font-size: 2rem;
+    margin: 0 0 0.125em;
+    line-height: 1.2;
+    max-width: 15em;
+    min-height: 2em;
+    text-transform: uppercase;
+
+    @include breakpoint($bp-large) {
+        font-size: 2.25rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            //text-decoration: underline;
+            //background-color: $cl-primary;
+            //color: $cl-primary;
+        }
+    }
+}
+
+.featpost__metablock {
+    margin-bottom: .5rem;
+
+    .catlist {
+        font-size: .875rem;
+
+        > li {
+            a {
+                // background-color: $cl-primary;
+            }
+        }
+    }
+}
+
+.featpost__excerpt {
+    font-size: 1rem;
+    //font-style: italic;
+    @include breakpoint($bp-large) {
+        font-size: 1.25rem;
+    }
+
+    .readmore {
+
+        display: block;
+        margin-top: 1.5em;
+        display: none;
+    }
+}
+
+.featpost__readmore {
+    font-size: 0.875em;
+    margin: 0;
+
+    @include breakpoint($bp-tablet) {
+        position: absolute;
+        bottom:0;
+
+    }
+}
+
+.featpostlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-bottom: $layout-gutter-width;
+        padding-bottom: $layout-gutter-width;
+        border-bottom: 1px dotted $cl-gray-xlight;
+    }
+}

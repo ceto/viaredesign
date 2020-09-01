@@ -78,10 +78,10 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$body-background: $white;
-$body-font-color: $black;
+$black: $cl-black;
+$white: $cl-white;
+$body-background: $cl-body-background;
+$body-font-color: $cl-body-font-color;
 $body-font-family: $fontsans;
 $body-antialiased: true;
 $global-margin: 1rem;

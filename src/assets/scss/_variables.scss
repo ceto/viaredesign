@@ -8,8 +8,8 @@ $fw-light: 300;
 
 
 // Colors
-$white: #fefefe;
-$black: #202020;
+$cl-white: #fefefe;
+$cl-black: #0a0a0a;
 
 $cl-primary: #ad0133;
 $cl-secondary: #5c34a6;
@@ -18,7 +18,8 @@ $cl-gray-dark: #323232;
 $cl-gray-xdark: #202020;
 $cl-gray-xlight: #f4f2f8;
 $cl-gray-light: #ababab;
-$cl-body-font-color: $black;
+$cl-body-font-color: $cl-black;
+$cl-body-background: $cl-white;
 
 $cl-bglight: #673ab7;
 $cl-bgdark: #482895;
