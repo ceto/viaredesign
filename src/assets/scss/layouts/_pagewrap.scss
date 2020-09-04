@@ -2,6 +2,8 @@
 .pagewrap {
     //max-width: 90%;
     //border:1px solid red;
+    position: relative;
+    z-index: 0;
     overflow: hidden;
     margin:0 auto;
     padding-left: 5%;
@@ -73,6 +75,57 @@
     &.white {
         background-color: $white;
         color: #fff;
+    }
+}
+
+.pagewrap.withhalfbg {
+    padding-bottom: 33%;
+    @include breakpoint($bp-large) {
+        padding-bottom: 4rem;
+        // padding-right: 7.5%;
+    }
+}
+.pagewrap.withbg {
+    padding-bottom: 33%;
+    @include breakpoint($bp-large) {
+        padding-bottom: 4rem;
+        // padding-right: 7.5%;
+    }
+}
+
+.pagewrap__bg {
+    background-color: inherit;
+    mask-image: linear-gradient(180deg, rgba(#000,0) 0, rgba(#000,1) 50%);
+    background-image: linear-gradient(180deg, transparent 0, #757575 50%, #757575 100%);
+    position: absolute;
+    z-index: -1;
+    left:0;
+    right:0;
+    bottom:0;
+
+    > img {
+        mix-blend-mode: overlay;
+        object-fit: cover;
+        width:100%;
+        height: 100%;
+        // filter: grayscale(1);
+        // opacity: .2;
+        // object-position: bottom;
+    }
+
+    @include breakpoint($bp-large) {
+        height: 100%;
+        width: 66.666%;
+        left:auto;
+        mask-image: linear-gradient(90deg, rgba(#000,0) 0, rgba(#000,1) 50%);
+        background-image: linear-gradient(90deg, transparent 0, #757575 50%, #757575 100%);
+        .withbg & {
+            width:100%;
+            mask-image: linear-gradient(90deg, rgba(#000,0) 0, rgba(#000,1) 66.666%);
+            background-image: linear-gradient(90deg, transparent 0, #757575 66.666%, #757575 100%);
+        }
+
+
     }
 }
 

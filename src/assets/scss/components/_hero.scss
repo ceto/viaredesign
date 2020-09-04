@@ -70,6 +70,9 @@ $hcmaxwidth:45rem;
     font-size:1.125em;
     font-weight: $fw-bold;
     max-width: $hcmaxwidth;
+    ul {
+        @include niceul;
+    }
     
 }
 

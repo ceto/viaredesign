@@ -83,3 +83,62 @@
         font-size: 1rem;
     }
 }
+
+@mixin niceul {
+    margin-left:0;
+    line-height: 1.4;
+    margin: 1em 0;
+    padding:0;
+    list-style: none;
+
+    > li {
+        // text-indent: -1em;
+        padding-left: 1.5em;
+        &:before {
+            content:'▪';
+            // transform: skew(20deg) scale(2.5);
+            font-weight: $fw-bold;
+            display: inline-block;
+            width: 1.5em;
+            height: 1em;
+            float: left;
+            margin-left: -1.5em;
+            color:$cl-primary;
+            transform: scale(1.666) translateY(-.05em);
+            transform-origin: left;
+
+        }
+    }
+
+    li:not(:last-child) {
+        margin-bottom: .5em;
+    }
+}
+
+@mixin niceol {
+    margin: 1em 0;
+    padding:0;
+    line-height: 1.4;
+    counter-reset: olcounter;
+
+    > li {
+        counter-increment: olcounter;
+        padding-left: 1.5em;
+        &:before {
+            font-weight: $fw-bold;
+            line-height: 1;
+            display: inline-block;
+            width: 1.5em;
+            float: left;
+            margin-left: -1.5em;
+            transform: translateY(.4125em);
+            color:$cl-secondary;
+            content: counter(olcounter) ". ";
+        }
+    }
+
+    li:not(:last-child) {
+        margin-bottom: .5em;
+    }
+
+}

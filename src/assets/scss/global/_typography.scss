@@ -26,6 +26,16 @@ a {
     }
 }
 
+
+.bodycopy {
+    ul {
+        @include niceul;
+    }
+    ol {
+        @include niceol;
+    }
+}
+
 .contacts {
     > p {
         position: relative;
@@ -166,7 +176,7 @@ ul.bulletlist {
     color:$cl-primary;
     font-weight: $fw-black;
     line-height: 1.2;
-    font-size: 2.333rem;
+    font-size: 2.25rem;
     margin: 0 0;
     // strong {
     //     font-weight: inherit;
@@ -272,59 +282,11 @@ hr {
     font-size: 1.125rem;
 
     ul {
-        margin-left:0;
-        line-height: 1.4;
-        margin: 1em 0;
-        padding:0;
-        list-style: none;
-
-        > li {
-            // text-indent: -1em;
-            padding-left: 1.5em;
-            &:before {
-                content:'▪';
-                font-weight: $fw-bold;
-                display: inline-block;
-                width: 1.5em;
-                height: 1em;
-                float: left;
-                margin-left: -1.5em;
-                color:$cl-primary;
-                transform: translateY(.025em);
-
-            }
-        }
-
-        li:not(:last-child) {
-            margin-bottom: .5em;
-        }
+        @include niceul;
     }
 
     ol {
-        margin: 1em 0;
-        padding:0;
-        line-height: 1.4;
-        counter-reset: olcounter;
-
-        > li {
-            counter-increment: olcounter;
-            padding-left: 1.5em;
-            &:before {
-                font-weight: $fw-bold;
-                line-height: 1;
-                display: inline-block;
-                width: 1.5em;
-                float: left;
-                margin-left: -1.5em;
-                transform: translateY(.4125em);
-                color:$cl-secondary;
-                content: counter(olcounter) ". ";
-            }
-        }
-
-        li:not(:last-child) {
-            margin-bottom: .5em;
-        }
+        @include niceol;
     }
 
 }
