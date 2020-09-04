@@ -53,6 +53,10 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+    &.accent {
+        background-color: $cl-primary;
+        color: #fff;
+    }
 
     &.dark {
         background-color: $cl-gray-dark;
@@ -64,6 +68,10 @@
     }
     &.black {
         background-color: $black;
+        color: #fff;
+    }
+    &.white {
+        background-color: $white;
         color: #fff;
     }
 }

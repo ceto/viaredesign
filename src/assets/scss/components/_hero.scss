@@ -55,6 +55,9 @@ $hcmaxwidth:45rem;
     font-weight: $fw-bold;
     max-width: $hcmaxwidth;
     text-transform: uppercase;
+    span {
+        color: $cl-primary
+    }
 }
 
 .hero__subtitle {
@@ -68,6 +71,13 @@ $hcmaxwidth:45rem;
     font-weight: $fw-bold;
     max-width: $hcmaxwidth;
     
+}
+
+.hero__actions {
+    margin-top:2rem;
+    .button {
+        margin:0;
+    }
 }
 
 
