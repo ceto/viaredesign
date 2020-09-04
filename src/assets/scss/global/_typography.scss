@@ -4,6 +4,10 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.2;
     margin: 0 0 .75rem;
 }
+ul,ol {
+    margin:0;
+    padding:0;
+}
 
 h2 {
     font-size:2rem;
@@ -151,7 +155,7 @@ ul.bulletlist {
             top:.4333em;
             width:.5em;
             height: .5em;
-            border-radius: 50%;
+            // border-radius: 50%;
             background-color: $cl-primary;
         }
     }

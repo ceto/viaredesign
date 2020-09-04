@@ -1,0 +1,31 @@
+.accordion-item {
+    &:not(:last-child) {
+        border-bottom: 2px solid rgba(#757575,.25);
+    }
+    &.is-active {
+        border-bottom-color:transparent;
+    }
+}
+.accordion-title {
+    // color: $cl-primary; 
+    font-weight: $fw-bold;
+    // text-transform: uppercase;
+    &:before {
+        font-weight: $fw-normal;
+        transform: scale(1.75);
+    }
+
+    .is-active & {
+        color:$cl-primary;
+        &:after {
+            border-bottom: 1px solid rgba(#fff, 0.25);
+        }
+    }
+}
+
+.accordion-content {
+    @extend .accentcopy;
+    >*:last-child {
+        margin-bottom: 0;
+    }
+}
