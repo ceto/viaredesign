@@ -1,0 +1,107 @@
+.sitemheader {
+    // @extend .pagewrap;
+    color:$cl-body-font-color;
+    background-color: $cl-body-background;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 10000;
+
+    height:#{$globalheaderheight - 1rem};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    overflow: initial;
+    box-shadow: 0 2px 0 -1px $cl-gray-xlight;
+    // margin-left: -$globalsidebarwidth;
+    @include breakpoint(tablet) {
+        display:none;
+    } 
+
+}
+
+
+.sitemheader__toggler {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding:.25em .666em;
+    // justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $cl-gray-xlight;
+    // color:$cl-gray;
+    border:none;
+    // border-left: 1px solid darken($cl-gray-xlight,3%);
+    border-right: 1px solid darken($cl-gray-xlight,5%);
+    min-width:4rem;
+    font-size: .75rem;
+    height:#{$globalheaderheight - 1rem};
+    text-decoration: none;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    outline: none;
+    &:hover,&:focus {
+        background-color: $cl-primary;
+        color: $white;
+        box-shadow: 0 2px 0 -1px $cl-primary;
+    }
+
+    img {
+        display: block;
+        margin:0 auto;
+        width:1.25rem;
+    }
+    span {
+        display: block;
+        
+    }
+
+}
+
+.sitemheader__brand {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: inherit;
+    width: $globalsidebarwidth;
+    flex-shrink: 0;
+
+    
+    img {
+        height:66%;
+        margin:0 1em 0 auto;
+
+    }
+}
+
+.sitemheader__nav {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+
+.sitemheader__topinfo {
+    font-family: sans-serif;
+    position: absolute;
+    right: 4rem;
+    top:.4333rem;
+    height:1rem;
+    line-height: 1.2;
+    padding:0 .75rem 0 0;
+    font-size: .75rem;
+    font-weight: $fw-bold;
+    // color: $cl-gray;
+    font-feature-settings: "lnum" 0;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        // color:$cl-primary;
+    }
+}

@@ -14,10 +14,9 @@
     overflow: initial;
     box-shadow: 0 2px 0 -1px $cl-gray-xlight;
     margin-left: -$globalsidebarwidth;
-    // @include breakpoint(95em) {
-    //     padding-left: 7.5%;
-    //     padding-right: 7.5%;
-    // } 
+    @include breakpoint($bp-tablet down) {
+        display:none;
+    } 
 
 }
 
