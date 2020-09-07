@@ -6,7 +6,7 @@
     text-align: center;
     height:100%;
     position: relative;
-    padding: 20% 0;
+    padding: 10% 0;
 
 }
 
@@ -43,7 +43,7 @@
 
 
 .promocard__title {
-    margin:.25em 0 .5em 0;
+    margin:.25em 0 .125em 0;
     font-size: 3rem;
     text-transform: uppercase;
     word-wrap: break-word;
@@ -55,6 +55,13 @@
         }
     }
 
+
+    .promocard--compact &{
+        font-size: 2.5rem;
+        @include breakpoint($bp-xlarge) {
+            // font-size:2.75rem;
+        }
+    }
 }
 
 .promocard__excerpt {
@@ -72,7 +79,7 @@
     // text-align: right;
 
     .button {
-        font-size: .875rem;
+        font-size: .75rem;
         margin:0;
     }
 }
@@ -100,6 +107,37 @@
     @include breakpoint($bp-xlarge) {
         // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
         grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    > li {
+    }
+}
+
+
+.quadwrap {
+    list-style: none;
+    margin: 0 0;
+    padding: rem-calc($layout-gutter-width / 2 )  0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-column-gap: rem-calc($layout-gutter-width / 2 );
+    grid-row-gap: rem-calc($layout-gutter-width / 2);
+    grid-auto-rows: 1fr;
+
+    &.black {
+        background-color: $black;
+    }
+
+    @include breakpoint($bp-large) {
+        // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    @include breakpoint($bp-xlarge) {
+        // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
+        grid-template-columns: repeat(4, 1fr);
         
     }
 

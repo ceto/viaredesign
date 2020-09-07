@@ -1,24 +1,38 @@
 .accordion-item {
     &:not(:last-child) {
-        border-bottom: 2px solid rgba(#757575,.25);
+        border-bottom: 2px solid rgba(#757575,.125);
     }
     &.is-active {
         border-bottom-color:transparent;
     }
+
 }
 .accordion-title {
     // color: $cl-primary; 
     font-weight: $fw-bold;
     // text-transform: uppercase;
+    
     &:before {
         font-weight: $fw-normal;
         transform: scale(1.75);
+
+        margin-top: -.5em;
+        right:.25em;
     }
 
     .is-active & {
         color:$cl-primary;
         &:after {
             border-bottom: 1px solid rgba(#fff, 0.25);
+        }
+    }
+
+    .bigcompact & {
+        font-size:1.666rem;
+        text-transform: uppercase;
+        padding-right: 0;
+        &::before {
+            display: none;
         }
     }
 }
