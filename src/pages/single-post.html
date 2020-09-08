@@ -41,13 +41,15 @@
 </div>
 
 <div class="pagewrap full xdark" data-magellan>
-    <h2 class="sectitle">TRUCK <span>NEWS</span></h2>
+    <h2 class="sectitle"><a href="{{root}}trucknews.html">TRUCK <span>NEWS</span></a></h2>
     <ul class="tabalikemenu withlinea">
-        <li class="tabalikemenu__title">Rovatok</li>
-        <li><a href="#">Belföld</a></li>
-        <li><a href="#">Nemzetközi</a></li>
-        <li><a href="#">Autógyártás</a></li>
-        <li><a href="#">Fuvarozás</a></li>
-        <li><a href="#">Sport</a></li>
+        <li>Kapcsolódó tartalmak</li>
+        <li><a href="{{root}}trucknews.html">Összes böngészése</a></li>
+    </ul>
+    <br>
+    <ul class="postcardgrid onlythree">
+        {{#each vehicles}}
+            <li>{{>postcard}}</li>
+        {{/each}}
     </ul>
 </div> 

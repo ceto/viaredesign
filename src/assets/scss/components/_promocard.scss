@@ -6,9 +6,13 @@
     text-align: center;
     height:100%;
     position: relative;
-    padding: 10% 0;
+    padding: 20% 0;
 
+    &.promocard--compact {
+        padding: 10% 0;
+    }
 }
+
 
 
 .promocard__fig {
@@ -44,7 +48,7 @@
 
 .promocard__title {
     margin:.25em 0 .125em 0;
-    font-size: 3rem;
+    font-size: 2.75rem;
     text-transform: uppercase;
     word-wrap: break-word;
     a {

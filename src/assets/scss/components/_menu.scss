@@ -12,7 +12,7 @@
 
     color: $cl-gray-light;
     text-transform: uppercase;
-    font-weight: $fw-bold;
+    font-weight: $fw-black;
     text-align: center;
     font-size: .666rem;
     // height: calc(100% - #{$globalheaderheight});
@@ -129,7 +129,7 @@
     // letter-spacing: .025em;
     //text-align: center;
     line-height: 1.2;
-    font-weight: $fw-bold;
+    font-weight: $fw-black;
     @include breakpoint($bp-large) {
         font-size: .875rem;
     }
@@ -164,7 +164,7 @@
     // justify-content: space-between;
     font-size:.875rem;
     line-height: 1.2;
-    font-weight: $fw-bold;
+    font-weight: $fw-black;
     text-transform: uppercase;
     color: $cl-gray-light;
 

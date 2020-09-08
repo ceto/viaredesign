@@ -1,18 +1,17 @@
 .postcard {
     background-color: $white;
     color: $cl-body-font-color;
-    padding:1rem;
+    padding:0 10% 15% 10%;
     height:100%;
     position: relative;
-    padding-bottom: 2.5rem;
 }
 
 
 .postcard__fig {
-    margin:-1rem -1rem 0 -1rem; 
+    margin:0 -12.5%; 
     padding:0;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 75%;
     position: relative;
 
     img {
@@ -28,10 +27,13 @@
 .postcard__meta {
     position: relative;
     margin-top:-.75rem;
+
 }
 .postcard__title {
-    margin:.25em 0 .5em 0;
-    font-size: 1.5rem;
+    margin:5% 0 .25em 0;
+    font-size: 1.333rem;
+    // font-weight: $fw-bold;
+    text-transform: uppercase;
     a {
         text-decoration: none;
         &:hover, &:focus {
@@ -44,19 +46,20 @@
 
 .postcard__excerpt {
     font-size: .875rem;
+    margin-bottom:1rem;
 
 }
 
 .postcard__actions  {
     position: absolute;
 
-    left:1rem;
-    right:1rem;
-    bottom:1rem;
+    left:10%;
+    right:10%;
+    bottom:5%;
     // text-align: right;
 
     .button {
-        font-size: .5rem;
+        font-size: .666rem;
         margin:0;
     }
 }
@@ -66,15 +69,11 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(20.5rem, 1fr));
     grid-column-gap: rem-calc($layout-gutter-width * 1);
     grid-row-gap: rem-calc($layout-gutter-width * 1);
     grid-auto-rows: 1fr;
 
-    @include breakpoint($bp-medium) {
-        grid-template-columns: repeat(auto-fill, minmax(20.5rem, 1fr));
- 
-    }
 
     > li {
         // background-color: $cl-primary;

@@ -9,7 +9,7 @@
 }
 .accordion-title {
     // color: $cl-primary; 
-    font-weight: $fw-bold;
+    font-weight: $fw-black;
     // text-transform: uppercase;
     
     &:before {
@@ -31,6 +31,7 @@
         font-size:1.666rem;
         text-transform: uppercase;
         padding-right: 0;
+        font-weight: $fw-black;
         &::before {
             display: none;
         }
