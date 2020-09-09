@@ -8,12 +8,12 @@
 
 .widget__body {
     // font-weight: $fw-bold;
+    font-size: .9375rem;
     .widget__title + & {
         margin-top: 0.5rem;
     }
     p {
         margin-bottom:.5em;
-        font-size: .875rem;
     }
 }
 

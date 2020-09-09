@@ -38,6 +38,7 @@
             padding-right: 7.5%;
         }   
     }
+
     &.nohpad {
         padding-left: 0;
         padding-right: 0;
@@ -130,7 +131,7 @@
 }
 
 .narrowwrap {
-    max-width: 60rem;
+    max-width:  #{$global-width/1.5};
     margin-left:auto;
     margin-right:auto;
 }

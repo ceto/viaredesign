@@ -1,6 +1,6 @@
 .sitefooter {
     @extend .pagewrap;
-    background-color: $cl-gray-dark;
+    background-color: $cl-gray-xdark;
     color: $cl-gray-light;
     @include breakpoint(95em) {
         padding-left: 7.5%;
@@ -16,11 +16,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: rem-calc($layout-gutter-width * 1);
-    grid-row-gap: rem-calc($layout-gutter-width * 1);
-    grid-auto-rows: 1fr;
+    grid-row-gap: rem-calc($layout-gutter-width * 2);
 
-    @include breakpoint($bp-medium) {
-        grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    @include breakpoint($bp-tablet) {
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+        grid-column-gap: rem-calc($layout-gutter-width * 1.5);
     
+    }
+}
+
+.sitefooter__bottom {
+    border-top:1px solid rgba(#fff, .125);
+    font-weight: $fw-bold;
+    font-size:.875rem;
+    margin:1.5rem 0 0;
+    padding:1rem 0 0 0;
+    p {
+        margin:0 0 .25em 0;
+        line-height: 1.4;
     }
 }
