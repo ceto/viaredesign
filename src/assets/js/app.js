@@ -22,7 +22,7 @@ $('.js-sidebartoggler').on('click', function(e) {
     $('html').toggleClass('sidebar-is-open');
 });
 
-$('.js-sidebarclose').on('click', function(e) {
+$('.mobilenavpanel__close').on('click', function(e) {
     $('html').removeClass('sidebar-is-open');
 });
 
@@ -79,7 +79,7 @@ $('.sidemenu > li > a').on('click', function(e) {
     }
 });
 
-$('.js-closesidemenu').on('click', function(e) {
+$('.z').on('click', function(e) {
     e.preventDefault();
     $(this).closest('.sidemenu').removeClass('is-open');
     // $(this).closest('.sidemenu > li').removeClass('is-active');

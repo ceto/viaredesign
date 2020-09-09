@@ -5,7 +5,7 @@
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
-    z-index: 10000;
+    z-index: 998;
 
     height:#{$globalheaderheight - 1rem};
     display: flex;
@@ -72,7 +72,7 @@
     
     img {
         height:66%;
-        margin:0 1em 0 auto;
+        margin:0 0 0 1rem;
 
     }
 }

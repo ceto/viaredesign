@@ -52,6 +52,10 @@ html.sidebar-is-open .pagesidebar {
 
 
     }
+
+    @include breakpoint($bp-tablet down) {
+        display: none;
+    }
 }
 
 
