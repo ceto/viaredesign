@@ -1,6 +1,6 @@
 .mobilenavpanel {
     background-color: $cl-gray-xdark;
-    color: #fff;
+    color: $cl-gray-light;
     position: fixed;
     top:0;
     bottom:0;
@@ -8,10 +8,12 @@
 
     height:100%;
     width:100vw;
-    padding:1.5rem .75rem 1.5rem #{$globalsidebarwidth + .75rem};
+    border-left: #{$globalsidebarwidth-small} solid $cl-black;
+    padding:1.5rem .75rem 1.5rem .75rem;
     z-index: 999;
     overflow-y: auto;
-    transition: left .4s ease-in .4s;
+    transition: opacity .4s ease-in-out .4s;
+    opacity: 0;
 
     @include breakpoint($bp-tablet) {
         display: none;
@@ -20,6 +22,7 @@
 
 html.sidebar-is-open .mobilenavpanel {
     left:0;
+    opacity: 1;
 }
 
 
@@ -53,7 +56,7 @@ html.sidebar-is-open .mobilenavpanel {
     font-size:.875rem;
     padding:.75rem 0;
     font-weight: $fw-bold;
-    color:$cl-gray-light;
+    // color:$cl-gray-light;
     // background-color: $cl-primary;
 
     img {
@@ -66,12 +69,14 @@ html.sidebar-is-open .mobilenavpanel {
 .mobilenavpanel__close {
     position: absolute;
 
-    font-size: 2.75rem;
-    text-outline: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
     top:1.5rem;
     right: .75rem;
     display: inline-block;
     border:1px solid currentColor;
     line-height: 1;
-    padding:0 .125em 0;
+    height:1.125em;
+    width:1.125em;
+    // background-color: $cl-primary;
 }

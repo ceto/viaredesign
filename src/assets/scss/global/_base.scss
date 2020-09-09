@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: $global-font-size;
+    // background-color: $cl-gray-xdark;
     // @include breakpoint(60em) {
     //     font-size: 15px;
     // }
@@ -32,6 +33,7 @@ body {
     font-family: $fontsans;
     font-weight: $fw-normal;
     line-height: 1.4;
+    box-shadow: 0 0 0 $globalsidebarwidth $cl-black;
 
     -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
     -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
@@ -48,8 +50,9 @@ body {
 }
 
 html.sidebar-is-open body{
-    margin-left: #{$globalsidebarwidth};
-    //width: 100%;
+    margin-left: #{$globalsidebarwidth-small};
+    overflow: hidden;
+
 
     // &:after {
     //     content: '';
@@ -64,7 +67,6 @@ html.sidebar-is-open body{
     // }
 
     @include breakpoint($bp-tablet) {
-        // width: calc(100% - #{$globalsidebarwidth});
         margin-left: $globalsidebarwidth;
     }
 }

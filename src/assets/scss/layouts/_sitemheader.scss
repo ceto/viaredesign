@@ -7,7 +7,7 @@
     position: relative;
     z-index: 998;
 
-    height:#{$globalheaderheight - 1rem};
+    height:#{$globalheaderheight-small};
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +37,7 @@
     border-right: 1px solid darken($cl-gray-xlight,5%);
     min-width:4rem;
     font-size: .75rem;
-    height:#{$globalheaderheight - 1rem};
+    height:#{$globalheaderheight-small};
     text-decoration: none;
     font-weight: $fw-bold;
     text-transform: uppercase;
