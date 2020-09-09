@@ -79,8 +79,8 @@ $('.sidemenu > li > a').on('click', function(e) {
     }
 });
 
-$('.z').on('click', function(e) {
+$('.js-closesidemenu').on('click', function(e) {
     e.preventDefault();
     $(this).closest('.sidemenu').removeClass('is-open');
     // $(this).closest('.sidemenu > li').removeClass('is-active');
-})
+});
