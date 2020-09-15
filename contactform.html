@@ -77,72 +77,78 @@
             <span>HU</span>
         </a>
     </nav>
-</aside><div class="pagewrap full xdark" data-magellan>
-    <h2 class="sectitle">RENT A VAN<span> | BÉRELJEN RÖVIDTÁVRA</span></h2>
-    <ul class="tabalikemenu withlinea">
-        <li class="is-active"><a href="#">Hogyan működik</a></li>
-        <li><a href="#">Miért jó a gyorsbérlés</a></li>
-        <li><a href="#">Tarifatáblázat</a></li>
-        <li><a href="#">Útmutató költözéshez</a></li>
-    </ul>
-    <br>
-    <div class="accentcopy">
-        <p>Amet consectetur adipisicing elit. Facilis, delectus voluptas. Molestias similique ex quam! Viarent lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam officia nisi obcaecati alias, magnam culpa ad! Odio, quis!</p>
-        <a href="#" class="button">Ajánlatot kérek</a>
+</aside><section class="pagewrap withbg full black fulloverlay">
+    <div class="xnarrowwrap">
+        <div class="accentcopy text-center">
+            <h2 class="sectitle">READY TO<br><span>GET STARTED</span></h2>
+            <p>Give us a call at <a href="#">+36 23 801 4101</a> or fill out the form below and we’ll get back to you within a business day.</p>
+        </div>
+        
+        <form id="contact_form" class="contactform" action="#" method="post" data-abide novalidate>
+            <p data-abide-error class="abide-formerror" style="display: none;">
+                There are some errors in your form.
+            </p>
+            <label class="smartlabel">
+                <span class="smartlabel__text">Full name*</span>
+                <input type="text" placeholder="Full name*" required id="message_name"
+                    name="message_name" value="">
+                <span class="form-error">
+                    Name is required!
+                </span>
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">Business name*</span>
+                <input type="text" placeholder="Business name" id="message_bname"
+                    name="message_bname" value="">
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">E-mail address*</span>
+                <input type="email" id="password" placeholder="E-mail address*" required
+                    id="message_email" name="message_email" value=""
+                    pattern="email">
+                <span class="form-error">
+                    E-mail is required!
+                </span>
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">Phone*</span>
+                <input type="text" id="message_tel" name="message_tel" value=""
+                    placeholder="Phone*" required>
+                <span class="form-error">
+                    Phone is required!
+                </span>
+            </label>
+
+            <label class="smartlabel" for="message_service">
+                <span class="smartlabel__text">Service</span><br>
+                <select id="message_service" name="message_service">
+                    <option value="Nincs megadva">Jelölje meg a témát</option>
+                    <option value="">Általános érdeklődés</option>
+                    <option value="">Franchise program</option>
+                    <option value="">Hosszútávú bérlet</option>
+                    <option value="">Rövidtávú bérlés</option>
+                </select>
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">How can we help?</span>
+                <textarea id="" rows="7" placeholder="How can we help?" id="message_text"
+                    name="message_text"></textarea>
+            </label>
+            <div class="formactions text-center">
+                <div id="result"></div>
+                <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
+                <input type="hidden" name="message_page" value="<?php the_title(); ?>">
+                <input type="hidden" name="message_human" value="2">
+                <input type="hidden" name="submitted" value="1">
+                <button id="contact_submit" type="submit"
+                    class="button large expanded">Űrlap elküldése</button>
+            </div>
+        </form>
     </div>
-</div> 
-<section class="pagewrap adark">
-    <div class="accentcopy">
-        <h2 class="sectitle">KÖLTÖZÉSHEZ IS <strong> RENT A VAN</strong> SZOLGÁLTATÁS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit cum rem quidem dolore quia beatae quam aliquam, saepe laudantium? Vero qui voluptatibus iusto suscipit!</p>
-        <p><strong>Nyerges vontató amet consectetur adipisicing elit.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum deleniti exercitationem. Dolor ratione consequatur omnis dicta tempora. Labore?</p>
-        <p>Consectetur adipisicing elit. Molestiae odit cum rem quidem dolore quia beatae quam aliquam, saepe laudantium? Vero qui voluptatibus iusto suscipit!</p>
-    </div>
+    <figure class="pagewrap__bg">
+        <img src="assets/img/herofull.jpg" alt="">
+    </figure>
 </section>
-
-<section class="pagewrap dark">
-    <div class="accentcopy">
-        <h2 class="sectitle">KÖLTÖZÉSHEZ IS <strong> RENT A VAN</strong> SZOLGÁLTATÁS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit cum rem quidem dolore quia beatae quam aliquam, saepe laudantium? Vero qui voluptatibus iusto suscipit!</p>
-        <p><strong>Nyerges vontató amet consectetur adipisicing elit.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum deleniti exercitationem. Dolor ratione consequatur omnis dicta tempora. Labore?</p>
-        <p>Consectetur adipisicing elit. Molestiae odit cum rem quidem dolore quia beatae quam aliquam, saepe laudantium? Vero qui voluptatibus iusto suscipit!</p>
-    </div>
-</section>
-<div class="pagewrap xdark full">
-
-    <h2 class="sectitle">GYAKORI KÉRDÉSEK</h2>
-    <br>    
-    <ul class="accordion" data-accordion data-allow-all-closed="true">
-        <li class="accordion-item is-active" data-accordion-item>
-          <a href="#" class="accordion-title">Meddig lehet lorem, ipsum dolor?</a>    
-          <div class="accordion-content" data-tab-content>
-            <p>Panel 1. Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque repellat consectetur ipsam facere placeat id ut velit at tenetur, ullam nesciunt. Aspernatur voluptatem nulla ipsam officia eveniet deleniti vero incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores recusandae quam, perspiciatis ullam a odio.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Milyen egyéb dolor sit amet consectetur</a>
-            <div class="accordion-content" data-tab-content>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat quisquam ea necessitatibus at veniam, cupiditate qui voluptates. Inventore quia a sapiente dignissimos totam!</p>
-            </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Mikor van az amikor bérlés egyéb dolores sitamet?</a>      
-            <div class="accordion-content" data-tab-content>
-                <p>Panel 3. Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque repellat consectetur ipsam facere placeat id ut velit at tenetur, ullam nesciunt. Aspernatur voluptatem nulla ipsam officia eveniet deleniti vero incidunt.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores recusandae quam, perspiciatis ullam a odio.</p>
-            </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Meddig lehet lorem, ipsum dolor?</a>    
-            <div class="accordion-content" data-tab-content>
-              <p>Panel 4. Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque repellat consectetur ipsam facere placeat id ut velit at tenetur, ullam nesciunt. Aspernatur voluptatem nulla ipsam officia eveniet deleniti vero incidunt.</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores recusandae quam, perspiciatis ullam a odio.</p>
-            </div>
-          </li>
-    </ul>
-</div> 
-
-
 <!-- <section class="cwibg">
     <figure class="cwibg__fig">
         <img src="assets/img/nlstripe.jpg" alt="">
