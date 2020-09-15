@@ -10,328 +10,306 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
     </head>
 <body>
-
-<aside class="sitemheader">
-    <a class="sitemheader__brand" href="/"><img src="assets/img/logo.svg" alt=""></a>
-
-    <button class="js-sidebartoggler js-menutoggler sitemheader__toggler">
-        <img src="assets/img/vectors/list.svg" alt="">
-        <span>Menü</span>
-    </button>
-
-
-</aside>
-<aside class="siteheader">
-    <a class="siteheader__brand" href="/"><img src="assets/img/logo.svg" alt=""></a>
-    <nav class="siteheader__nav">
-        <div class="siteheader__topbar">
-
-            <nav class="siteheader__topbar__nav">
-                <ul class="topbarmenu">
-                    <li>
-                        <a href="components.html">
-                            Style guide
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Franchise
-                        </a>
-                    </li>
-                    <li>
-                        <a href="trucknews.html">
-                            Truck news
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Karrier
-                        </a>
-                    </li>                </ul>
-            </nav>
-            <div class="siteheader__topbar__actions"> Tel: <a href="#">+36 (70) 770 5653</a></div>
-        </div>
-        <ul class="mainmenu show-for-tablet">
-            <li>
-                <a href="longterm.html">
-                    Hosszútávú bérlet
-                </a>
-            </li>
-            <li>
-                <a href="shortterm.html">
-                    Rövid távú bérlés
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Értékesítés
-                </a>
-            </li>
-            <li>
-                <a href="contact.html">
-                    Kapcsolat
-                </a>
-            </li>        </ul>
-        <a class="countryselect" href="#">
-            <img src="assets/img/vectors/globe.svg" alt="">
-            <span>HU</span>
-        </a>
-    </nav>
-</aside><section class="pagewrap withbg full black fulloverlay">
-    <div class="xnarrowwrap">
-        <div class="accentcopy text-center">
-            <h2 class="sectitle">READY TO<br><span>GET STARTED</span></h2>
-            <p>Give us a call at <a href="#">+36 23 801 4101</a> or fill out the form below and we’ll get back to you within a business day.</p>
-        </div>
+<div class="offcanvas">
+    <div class="offcanvas__body">
+        <aside class="sitemheader">
+            <a class="sitemheader__brand" href="/"><img src="assets/img/logo.svg" alt=""></a>
         
-        <form id="contact_form" class="contactform" action="#" method="post" data-abide novalidate>
-            <p data-abide-error class="abide-formerror" style="display: none;">
-                There are some errors in your form.
-            </p>
-            <label class="smartlabel">
-                <span class="smartlabel__text">Full name*</span>
-                <input type="text" placeholder="Full name*" required id="message_name"
-                    name="message_name" value="">
-                <span class="form-error">
-                    Name is required!
-                </span>
-            </label>
-            <label class="smartlabel">
-                <span class="smartlabel__text">Business name*</span>
-                <input type="text" placeholder="Business name" id="message_bname"
-                    name="message_bname" value="">
-            </label>
-            <label class="smartlabel">
-                <span class="smartlabel__text">E-mail address*</span>
-                <input type="email" id="password" placeholder="E-mail address*" required
-                    id="message_email" name="message_email" value=""
-                    pattern="email">
-                <span class="form-error">
-                    E-mail is required!
-                </span>
-            </label>
-            <label class="smartlabel">
-                <span class="smartlabel__text">Phone*</span>
-                <input type="text" id="message_tel" name="message_tel" value=""
-                    placeholder="Phone*" required>
-                <span class="form-error">
-                    Phone is required!
-                </span>
-            </label>
+            <button class="js-sidebartoggler js-menutoggler sitemheader__toggler">
+                <img src="assets/img/vectors/list.svg" alt="">
+                <span>Menü</span>
+            </button>
+        
+        
+        </aside>
+        <aside class="siteheader">
+            <a class="siteheader__brand" href="/"><img src="assets/img/logo.svg" alt=""></a>
+            <nav class="siteheader__nav">
+                <div class="siteheader__topbar">
+        
+                    <nav class="siteheader__topbar__nav">
+                        <ul class="topbarmenu">
+                            <li>
+                                <a href="#">
+                                    Rólunk
+                                </a>
+                            </li>
+                            <li>
+                                <a href="components.html">
+                                    Style guide
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Franchise
+                                </a>
+                            </li>
+                            <li>
+                                <a href="trucknews.html">
+                                    Truck news
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Karrier
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="siteheader__topbar__actions"> Tel: <a href="#">+36 (70) 770 5653</a></div>
+                </div>
+                <ul class="mainmenu show-for-tablet">
+                    <li>
+                        <a href="longterm.html">
+                            Hosszútávú bérlet
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shortterm.html">
+                            Rövidtávú bérlés
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Értékesítés
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Kapcsolat
+                        </a>
+                    </li>        </ul>
+                <a class="countryselect" href="#">
+                    <img src="assets/img/vectors/globe.svg" alt="">
+                    <span>HU</span>
+                </a>
+            </nav>
+        </aside>        <section class="pagewrap withbg full black fulloverlay">
+            <h2 class="sectitle text-center"><span><small>KAPCSOLATFELVÉTEL</small></span><br>VIARENT MAGYARORSZÁG</h2>
+            <div class="xnarrowwrap">
+                <div class="accentcopy text-center">
+                    <p><strong>Give us a call at <a href="#">+36 23 801 4101</a> or fill out the form below and we’ll get back to you within a business day.</strong></p>
+                </div>
+                <form id="contact_form" class="contactform" action="#" method="post" data-abide novalidate>
+                    <p data-abide-error class="abide-formerror" style="display: none;">
+                        There are some errors in your form.
+                    </p>
+                    <label class="smartlabel">
+                        <span class="smartlabel__text">Full name*</span>
+                        <input type="text" placeholder="Full name*" required id="message_name"
+                            name="message_name" value="">
+                        <span class="form-error">
+                            Name is required!
+                        </span>
+                    </label>
+                    <label class="smartlabel">
+                        <span class="smartlabel__text">Business name*</span>
+                        <input type="text" placeholder="Business name" id="message_bname"
+                            name="message_bname" value="">
+                    </label>
+                    <label class="smartlabel">
+                        <span class="smartlabel__text">E-mail address*</span>
+                        <input type="email" id="password" placeholder="E-mail address*" required
+                            id="message_email" name="message_email" value=""
+                            pattern="email">
+                        <span class="form-error">
+                            E-mail is required!
+                        </span>
+                    </label>
+                    <label class="smartlabel">
+                        <span class="smartlabel__text">Phone*</span>
+                        <input type="text" id="message_tel" name="message_tel" value=""
+                            placeholder="Phone*" required>
+                        <span class="form-error">
+                            Phone is required!
+                        </span>
+                    </label>
+        
+                    <label class="smartlabel" for="message_service">
+                        <span class="smartlabel__text">Service</span><br>
+                        <select id="message_service" name="message_service">
+                            <option value="Nincs megadva">Jelölje meg a témát</option>
+                            <option value="">Általános érdeklődés</option>
+                            <option value="">Franchise program</option>
+                            <option value="">Hosszútávú bérlet</option>
+                            <option value="">Rövidtávú bérlés</option>
+                        </select>
+                    </label>
+                    <label class="smartlabel">
+                        <span class="smartlabel__text">How can we help?</span>
+                        <textarea id="" rows="7" placeholder="How can we help?" id="message_text"
+                            name="message_text"></textarea>
+                    </label>
+                    <div class="formactions text-center">
+                        <div id="result"></div>
+                        <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
+                        <input type="hidden" name="message_page" value="<?php the_title(); ?>">
+                        <input type="hidden" name="message_human" value="2">
+                        <input type="hidden" name="submitted" value="1">
+                        <button id="contact_submit" type="submit"
+                            class="button large expanded">Űrlap elküldése</button>
+                    </div>
+                </form>
+            </div>
+            <figure class="pagewrap__bg">
+                <img src="assets/img/herofull.jpg" alt="">
+            </figure>
+        </section>
+        <aside class="mobilenavpanel">
+            <a class="mobilenavpanel__brand" href="/"><img src="assets/img/logo-white.svg" alt=""></a>
+            <ul class="mobilemenu">
+                <li>
+                    <a href="longterm.html">
+                        Hosszútávú bérlet
+                    </a>
+                </li>
+                <li>
+                    <a href="shortterm.html">
+                        Rövidtávú bérlés
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Értékesítés
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Kapcsolat
+                    </a>
+                </li>    </ul>
+            <br>
+            <hr class="fulldivider">
+            <br>
+            <ul class="mobilesecmenu">
+                <li>
+                    <a href="#">
+                        Rólunk
+                    </a>
+                </li>
+                <li>
+                    <a href="components.html">
+                        Style guide
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Franchise
+                    </a>
+                </li>
+                <li>
+                    <a href="trucknews.html">
+                        Truck news
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Karrier
+                    </a>
+                </li>
+            </ul>
+            <br>
+            <hr class="fulldivider">
+            <div class="mobilenavpanel__bottom">
+                Tel: <a href="#">+36 (70) 770 5653</a>
+                <a class="countryselect" href="#">
+                    <img src="assets/img/vectors/globe.svg" alt="">
+                    <span>HU</span>
+                </a>
+            </div>
+        
+            <a href="#" class="mobilenavpanel__close">&times;</a>
+        </aside>    </div>
+    <div class="offcanvas__left">
+        <aside class="pagesidebar">
+            <a class="pagesidebar__brand" href="/"><img src="assets/img/logo-white.svg" alt=""></a>
+            <ul class="sidemenu">
+                <li>
+                    <a href="mainvcat.html">
+                        <img src="assets/iconcollection/furgon.svg" alt="">
+                        Furgonok
+                    </a>
+                    <ul>
+                        <li class="is-active"><a href="#" class="js-closesidemenu">vissza</a></li>
+                        <li><a href="subvcat.html"><img src="assets/iconcollection/minibusz.svg" alt="">Ponyvás</a></li>
+                        <li><a href="subvcat.html"><img src="assets/iconcollection/kommunalis.svg" alt="">Hűtős</a></li>
+                        <li><a href="subvcat.html"><img src="assets/iconcollection/teherauto.svg" alt="">Zárt áruszállító</a></li>
+                        <li><a href="mainvcat.html">Mutasd mindet</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="subvcat.html">
+                        <img src="assets/iconcollection/minibusz.svg" alt="">
+                        Minibuszok
+                    </a>
+                </li>
+                <li>
+                    <a href="mainvcat.html">
+                        <img src="assets/iconcollection/kisteherauto.svg" alt="">
+                        Kisteherautók
+                    </a>
+                </li>
+                <li>
+                    <a href="mainvcat.html">
+                        <img src="assets/iconcollection/teherauto.svg" alt="">
+                        Teherautók
+                    </a>
+                    <ul>
+                        <li class="is-active"><a href="#" class="js-closesidemenu">vissza</a></li>
+                        <li><a href="subvcat.html"><img src="assets/iconcollection/teherauto.svg" alt="">Hűtős teharautó</a></li>
+                        <li><a href="subvcat.html"><img src="assets/iconcollection/kommunalis.svg" alt="">Ponyvás teherautó</a></li>
+                        <li><a href="subvcat.html"><img src="assets/iconcollection/teherauto.svg" alt="">Dolror sit </a></li>
+                        <li><a href="mainvcat.html">Mutasd mindet</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="subvcat.html">
+                        <img src="assets/iconcollection/kommunalis.svg" alt="">
+                        Kommunális
+                    </a>
+                </li>
+                <li>
+                    <a href="subvcat.html">
+                        <img src="assets/iconcollection/nyergesvontato.svg" alt="">
+                        Nyerges vontatók
+                    </a>
+                </li>
+                <li>
+                    <a href="mainvcat.html">
+                        <img src="assets/iconcollection/felpotkocsi.svg" alt="">
+                        Félpótkocsik
+                    </a>
+                    <ul>
+                        <li class="is-active"><a href="#" class="js-closesidemenu">vissza</a></li>
+                        <li>
+                            <a href="subvcat.html">
+                                <img src="assets/iconcollection/felpotkocsi.svg" alt="">
+                                Ponyvás félpótkocsik
+                            </a>
+                        </li>
+                        <li>
+                            <a href="subvcat.html">
+                                <img src="assets/iconcollection/felpotkocsi.svg" alt="">
+                                Hűtős félpótkocsik
+                            </a>
+                        </li>
+                        <li>
+                            <a href="subvcat.html">
+                                <img src="assets/iconcollection/felpotkocsi.svg" alt="">
+                                Speciális félpótkocsik
+                            </a>
+                        </li>
+                        <li><a href="mainvcat.html">Mutasd mindet</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="pagesidebar__bottom">
+            <img class="pagesidebar__slogan" src="assets/img/vectors/mert.svg" alt="Mert bérelni jobb">
+            </div>
+        </aside>    </div>
+</div>
 
-            <label class="smartlabel" for="message_service">
-                <span class="smartlabel__text">Service</span><br>
-                <select id="message_service" name="message_service">
-                    <option value="Nincs megadva">Jelölje meg a témát</option>
-                    <option value="">Általános érdeklődés</option>
-                    <option value="">Franchise program</option>
-                    <option value="">Hosszútávú bérlet</option>
-                    <option value="">Rövidtávú bérlés</option>
-                </select>
-            </label>
-            <label class="smartlabel">
-                <span class="smartlabel__text">How can we help?</span>
-                <textarea id="" rows="7" placeholder="How can we help?" id="message_text"
-                    name="message_text"></textarea>
-            </label>
-            <div class="formactions text-center">
-                <div id="result"></div>
-                <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
-                <input type="hidden" name="message_page" value="<?php the_title(); ?>">
-                <input type="hidden" name="message_human" value="2">
-                <input type="hidden" name="submitted" value="1">
-                <button id="contact_submit" type="submit"
-                    class="button large expanded">Űrlap elküldése</button>
-            </div>
-        </form>
-    </div>
-    <figure class="pagewrap__bg">
-        <img src="assets/img/herofull.jpg" alt="">
-    </figure>
-</section>
-<section class="cwibg">
-    <figure class="cwibg__fig">
-        <img src="assets/img/nlstripe.jpg" alt="">
-    </figure>
-    <div class="cwibg__content">
-        <h2 class="cwibg__title">Ne szalassza el a legjobb ajánlatainkat</h2>
-        <h3 class="cwibg__subtitle">Iratkozzon fel hírlevelünkre és tájékoztatjuk akcióinkról, újdonságainkról.</h3>
-        <a href="#" class="button">Feliratkozom</a>
-    </div>
-</section><footer role="contentinfo" class="sitefooter">
-    <ul class="footerwidgetgrid">
-        <li>
-            <section class="widget">
-            <h3 class="widget__title">Kapcsolat</h3>
-            <div class="widget__body">
-                <p><strong>Viabérautó Kft. - Szigetszentmiklós</strong><br>
-                    <strong>Telefon: <a href="tel:+36 1 358 14 44 ">+36 (1) 358 1444</a></strong><br>
-                    <strong>Fax: <a href="tel:+36 1 358 14 44 ">+36 (24) 50 22 33</a></strong><br>
-                    <strong>E-mail: <a href="mailto:budapest@viarent.hu">info@viarent.hu</a></strong></p>
-                    <a class="button hollow tiny" href="contact.html">Telephelyek és nyitvatartás</a>
-            </div>
-            </section>
-        </li>
-        <li>
-            <section class="widget">
-            <h3 class="widget__title">Viarent in Europe</h3>
-            <div class="widget__body">
-                <ul class="niceul">
-                    <li><a href="#"><strong>Magyarország</strong> - Viabérautó Kft.</a></li>
-                    <li><a href="#"><strong>Szlovákia</strong> - Viarent s.r.o.</a></li>
-                    <li><a href="#"><strong>Szerbia</strong> - SDT Renting D.O.O.</a></li>
-                </ul>
-            </div>
-            </section>
-        </li>
-        <li>
-            <section class="widget">
-            <h3 class="widget__title">Esetleg social links</h3>
-            <div class="widget__body">
-                <p>Aquibusdam repellendus dolorem dolores deleniti excepturi laboriosam quos eligendi fugit iure hic culpa ipsum nisi!</p>
-            </div>
-            </section>
-        </li>
-        <li>
-            <section class="widget">
-            <h3 class="widget__title">Első három kábé fix</h3>
-            <div class="widget__body">
-                <p><strong>Ezek meg mondjuk országspecifikus tartlamak lehetnek</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, doloribus enim? Perferendis, maiores est!</p>
-            </div>
-            </section>
-        </li>
-        <li>
-            <section class="widget">
-            <h3 class="widget__title">Custom widget goes here</h3>
-            <div class="widget__body">
-                <p><strong>Lehet csak kettő is</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, doloribus enim? Perferendis, maiores est!</p>
-            </div>
-            </section>
-        </li>
-    </ul>
-    <div class="sitefooter__bottom">
-        <p>&copy; 2020 All rights reserved. VIARENT is a trademark of Via Bérautó Kft. <a href="#">Jogi nyilatkozat</a> | <a href="#">Adatkezelési tájékoztató</a> | <a href="#">Sütik kezelése</a></p>    
-    </div>
-</footer><aside class="pagesidebar">
-    <a class="pagesidebar__brand" href="/"><img src="assets/img/logo-white.svg" alt=""></a>
-    <ul class="sidemenu">
-        <li>
-            <a href="mainvcat.html">
-                <img src="assets/iconcollection/furgon.svg" alt="">
-                Furgonok
-            </a>
-            <ul>
-                <li class="is-active"><a href="#" class="js-closesidemenu">vissza</a></li>
-                <li><a href="subvcat.html"><img src="assets/iconcollection/minibusz.svg" alt="">Ponyvás</a></li>
-                <li><a href="subvcat.html"><img src="assets/iconcollection/kommunalis.svg" alt="">Hűtős</a></li>
-                <li><a href="subvcat.html"><img src="assets/iconcollection/teherauto.svg" alt="">Zárt áruszállító</a></li>
-                <li><a href="mainvcat.html">Mutasd mindet</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="subvcat.html">
-                <img src="assets/iconcollection/minibusz.svg" alt="">
-                Minibuszok
-            </a>
-        </li>
-        <li>
-            <a href="mainvcat.html">
-                <img src="assets/iconcollection/kisteherauto.svg" alt="">
-                Kisteherautók
-            </a>
-        </li>
-        <li>
-            <a href="mainvcat.html">
-                <img src="assets/iconcollection/teherauto.svg" alt="">
-                Teherautók
-            </a>
-            <ul>
-                <li class="is-active"><a href="#" class="js-closesidemenu">vissza</a></li>
-                <li><a href="subvcat.html"><img src="assets/iconcollection/teherauto.svg" alt="">Hűtős teharautó</a></li>
-                <li><a href="subvcat.html"><img src="assets/iconcollection/kommunalis.svg" alt="">Ponyvás teherautó</a></li>
-                <li><a href="subvcat.html"><img src="assets/iconcollection/teherauto.svg" alt="">Dolror sit </a></li>
-                <li><a href="mainvcat.html">Mutasd mindet</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="subvcat.html">
-                <img src="assets/iconcollection/kommunalis.svg" alt="">
-                Kommunális
-            </a>
-        </li>
-        <li>
-            <a href="subvcat.html">
-                <img src="assets/iconcollection/nyergesvontato.svg" alt="">
-                Nyerges vontatók
-            </a>
-        </li>
-        <li>
-            <a href="mainvcat.html">
-                <img src="assets/iconcollection/felpotkocsi.svg" alt="">
-                Félpótkocsik
-            </a>
-            <ul>
-                <li class="is-active"><a href="#" class="js-closesidemenu">vissza</a></li>
-                <li>
-                    <a href="subvcat.html">
-                        <img src="assets/iconcollection/felpotkocsi.svg" alt="">
-                        Ponyvás félpótkocsik
-                    </a>
-                </li>
-                <li>
-                    <a href="subvcat.html">
-                        <img src="assets/iconcollection/felpotkocsi.svg" alt="">
-                        Hűtős félpótkocsik
-                    </a>
-                </li>
-                <li>
-                    <a href="subvcat.html">
-                        <img src="assets/iconcollection/felpotkocsi.svg" alt="">
-                        Speciális félpótkocsik
-                    </a>
-                </li>
-                <li><a href="mainvcat.html">Mutasd mindet</a></li>
-            </ul>
-        </li>
-    </ul>
-    <div class="pagesidebar__bottom">
-    <img class="pagesidebar__slogan" src="assets/img/vectors/mert.svg" alt="Mert bérelni jobb">
-    </div>
-</aside><aside class="mobilenavpanel">
-    <a class="mobilenavpanel__brand" href="/"><img src="assets/img/logo-white.svg" alt=""></a>
-    <ul class="mobilemenu">
-        <li>
-            <a href="longterm.html">
-                Hosszútávú bérlet
-            </a>
-        </li>
-        <li>
-            <a href="shortterm.html">
-                Rövid távú bérlés
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Értékesítés
-            </a>
-        </li>
-        <li>
-            <a href="contact.html">
-                Kapcsolat
-            </a>
-        </li>    </ul>
-    <br>
-    <br>
-    <hr class="fulldivider">
-    <div class="mobilenavpanel__bottom">
-        Tel: <a href="#">+36 (70) 770 5653</a>
-        <a class="countryselect" href="#">
-            <img src="assets/img/vectors/globe.svg" alt="">
-            <span>HU</span>
-        </a>
-    </div>
-    <a href="#" class="mobilenavpanel__close">&times;</a>
-</aside>
+
 <script src="assets/js/app.js"></script>
 </body>
 </html>
