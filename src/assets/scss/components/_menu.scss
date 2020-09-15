@@ -14,7 +14,7 @@
     text-transform: uppercase;
     font-weight: $fw-black;
     text-align: center;
-    font-size: .5666rem;
+    font-size: .62682rem;
     transition: transform .2s ease-out;
 
     @include breakpoint($bp-tablet){
@@ -176,8 +176,8 @@
 
     width:100%;
     // margin-left: -.75rem;
-    margin-right: -.75em;
-    font-size: .9375rem;
+    margin-right: -.5em;
+    font-size: .875rem;
     text-transform: uppercase;
     letter-spacing: .025em;
     //text-align: center;
@@ -186,6 +186,7 @@
 
     @include breakpoint($bp-large) {
         font-size: 1.125rem;
+        margin-right: -.75em;
     }
     @include breakpoint($bp-xlarge) {
         font-size: 1.125rem;
@@ -196,8 +197,11 @@
     li {
         a {
             text-decoration: none;
-            padding:.5rem .75em;
+            padding:.5rem .5em;
             display: inline-block;
+            @include breakpoint($bp-large) {
+                padding:.5rem .75em;
+            }
             &:hover, &:focus {
                 color: $cl-primary;
             }
