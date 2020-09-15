@@ -1,0 +1,72 @@
+<section class="pagewrap withbg full black fulloverlay">
+    <div class="xnarrowwrap">
+        <div class="accentcopy text-center">
+            <h2 class="sectitle">READY TO<br><span>GET STARTED</span></h2>
+            <p>Give us a call at <a href="#">+36 23 801 4101</a> or fill out the form below and we’ll get back to you within a business day.</p>
+        </div>
+        
+        <form id="contact_form" class="contactform" action="#" method="post" data-abide novalidate>
+            <p data-abide-error class="abide-formerror" style="display: none;">
+                There are some errors in your form.
+            </p>
+            <label class="smartlabel">
+                <span class="smartlabel__text">Full name*</span>
+                <input type="text" placeholder="Full name*" required id="message_name"
+                    name="message_name" value="">
+                <span class="form-error">
+                    Name is required!
+                </span>
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">Business name*</span>
+                <input type="text" placeholder="Business name" id="message_bname"
+                    name="message_bname" value="">
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">E-mail address*</span>
+                <input type="email" id="password" placeholder="E-mail address*" required
+                    id="message_email" name="message_email" value=""
+                    pattern="email">
+                <span class="form-error">
+                    E-mail is required!
+                </span>
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">Phone*</span>
+                <input type="text" id="message_tel" name="message_tel" value=""
+                    placeholder="Phone*" required>
+                <span class="form-error">
+                    Phone is required!
+                </span>
+            </label>
+
+            <label class="smartlabel" for="message_service">
+                <span class="smartlabel__text">Service</span><br>
+                <select id="message_service" name="message_service">
+                    <option value="Nincs megadva">Jelölje meg a témát</option>
+                    <option value="">Általános érdeklődés</option>
+                    <option value="">Franchise program</option>
+                    <option value="">Hosszútávú bérlet</option>
+                    <option value="">Rövidtávú bérlés</option>
+                </select>
+            </label>
+            <label class="smartlabel">
+                <span class="smartlabel__text">How can we help?</span>
+                <textarea id="" rows="7" placeholder="How can we help?" id="message_text"
+                    name="message_text"></textarea>
+            </label>
+            <div class="formactions text-center">
+                <div id="result"></div>
+                <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
+                <input type="hidden" name="message_page" value="<?php the_title(); ?>">
+                <input type="hidden" name="message_human" value="2">
+                <input type="hidden" name="submitted" value="1">
+                <button id="contact_submit" type="submit"
+                    class="button large expanded">Űrlap elküldése</button>
+            </div>
+        </form>
+    </div>
+    <figure class="pagewrap__bg">
+        <img src="{{root}}assets/img/herofull.jpg" alt="">
+    </figure>
+</section>
