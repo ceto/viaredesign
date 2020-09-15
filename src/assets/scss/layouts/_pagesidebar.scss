@@ -1,29 +1,63 @@
-.pagesidebar {
-    background-color: $cl-black;
-    color: #fff;
+.offcanvas {
+    position: relative;
+    &.sidebar-is-open {
+        overflow: hidden;
+        @include breakpoint($bp-tablet) {
+            overflow: initial;
+        }
+
+        .offcanvas__left  {
+            transform: translateX(0);
+        }
+        .offcanvas__body  {
+            transform: translateX(#{$globalsidebarwidth-small});
+        }
+
+
+    }
+    > * {
+        transition: transform .2s ease-in;
+    }
+}
+
+.offcanvas__left {
     position: fixed;
     top:0;
-    left:-#{$globalsidebarwidth-small};
-    bottom:0;
-    height:100%;
+    left:0;
     width:#{$globalsidebarwidth-small};
-    padding: 0 0;
-    z-index: 1000;
+    height: 100%;
     overflow-y: auto;
-    transition: left .2s ease-in;
-    text-align: center;
-    border-right: 1px solid rgba(#fff,.05);
+    background-color: $cl-black;
+    color: #fff;
+    border-right: 1px solid rgba(#fff,.025);
+    transition: transform .2s ease-in;
+    transform: translateX(#{-$globalsidebarwidth-small});
+    backface-visibility: hidden;
 
     @include breakpoint($bp-tablet) {
-        left:0;
         width:#{$globalsidebarwidth};
+        transform: translateX(0);
     }
+}
+
+.offcanvas__body {
+    position: relative;
+    z-index: 1;
+    backface-visibility: hidden;
+    @include breakpoint($bp-tablet) {
+        margin-left: $globalsidebarwidth;
+        transform: translateX(0) !important;
+    }
+}
+.pagesidebar {
+   
+    padding: 0 0;
+    z-index: 1000;
+    text-align: center;
+    // border-right: 1px solid rgba(#fff,.025);
 
 }
 
-html.sidebar-is-open .pagesidebar {
-    left:0;
-}
 
 
 .js-sidebarclose {
@@ -70,9 +104,13 @@ html.sidebar-is-open .pagesidebar {
     width:100%;
     padding:.75rem .5rem;
     // background-color: $cl-primary;
-    @media screen and (max-height: 46em){
+    @media screen and (max-height: 38em){
         display: none;
     }
+    @media screen and (max-height: 45em) and (min-width: 768px ){
+        display: none;
+    }
+
 }
 .pagesidebar__slogan {
     max-height: #{$globalheaderheight - 1rem};

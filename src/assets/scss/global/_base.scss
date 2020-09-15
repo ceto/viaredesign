@@ -13,10 +13,6 @@ html {
     }
 }
 
-html.sidebar-is-open {
-    // overflow: hidden;
-}
-
 
 
 // Set box-sizing globally to handle padding and border widths
@@ -39,37 +35,8 @@ body {
     -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
 }
 
-body {
-    width:100%;
-    transition: margin-left .2s ease-in;
-
-    @include breakpoint($bp-tablet) {
-        width: calc(100% - #{$globalsidebarwidth});
-        margin-left: $globalsidebarwidth;
-    }
-}
-
-html.sidebar-is-open body{
-    margin-left: #{$globalsidebarwidth-small};
-    overflow: hidden;
 
 
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     left:0;
-    //     top:0;
-    //     bottom:0;
-    //     right:0;
-    //     z-index: 998;
-    //     display: block;
-    //     background-color: rgba(#000,.75);
-    // }
-
-    @include breakpoint($bp-tablet) {
-        margin-left: $globalsidebarwidth;
-    }
-}
 
 
 

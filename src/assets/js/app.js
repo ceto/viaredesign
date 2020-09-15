@@ -19,11 +19,11 @@ $(document).foundation();
 
 
 $('.js-sidebartoggler').on('click', function(e) {
-    $('html').toggleClass('sidebar-is-open');
+    $('.offcanvas').toggleClass('sidebar-is-open');
 });
 
 $('.mobilenavpanel__close').on('click', function(e) {
-    $('html').removeClass('sidebar-is-open');
+    $('.offcanvas').removeClass('sidebar-is-open');
 });
 
 

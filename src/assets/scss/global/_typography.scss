@@ -216,6 +216,9 @@ ul.bulletlist {
         // color:$white;
         font-weight: $fw-normal;
     }
+    small {
+        font-size: .666em;
+    }
     > a {
         text-decoration: none;
         &:hover, &:focus {
@@ -300,6 +303,10 @@ hr {
 
 .accentcopy {
     font-size: 1.125rem;
+
+    &.narrow {
+        max-width: 50rem;
+    }
 
     ul {
         @include niceul;
