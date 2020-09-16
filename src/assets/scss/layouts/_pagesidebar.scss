@@ -1,5 +1,6 @@
 .offcanvas {
     position: relative;
+    background-color: $cl-black;
     &.sidebar-is-open {
         overflow: hidden;
         @include breakpoint($bp-tablet) {
@@ -21,6 +22,7 @@
 }
 
 .offcanvas__left {
+    // z-index: 0;
     position: fixed;
     top:0;
     left:0;
@@ -38,12 +40,15 @@
         width:#{$globalsidebarwidth};
         transform: translateX(0);
     }
+    //display: none;
 }
 
 .offcanvas__body {
     position: relative;
     z-index: 1;
     backface-visibility: hidden;
+    background-color: $cl-body-background;
+    color: $cl-body-font-color;
     @include breakpoint($bp-tablet) {
         margin-left: $globalsidebarwidth;
         transform: translateX(0) !important;

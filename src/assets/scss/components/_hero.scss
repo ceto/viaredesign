@@ -1,7 +1,16 @@
-$hcmaxwidth:45rem;
+$hcmaxwidth:63rem;
 .hero {
     position: relative;
     color:#fff;
+    overflow: hidden;
+    
+
+    &.fullheight {
+        @include breakpoint($bp-xlarge) {
+            min-height: calc(100vh - #{$globalheaderheight});
+            max-height: 100vw;
+        }
+    }
 }
 .hero__fig  {
     position: absolute;
@@ -28,32 +37,44 @@ $hcmaxwidth:45rem;
 
 .hero__content {
     @extend .pagewrap;
+    max-width: $hcmaxwidth;
+    margin-left: 0;
     text-shadow: 0 0 1.5rem rgba(#000,.333);
-    // color:#fff;
-    // color: #fff;
-    padding-top:30%;
-    // padding-bottom: 0;
+    padding-top:25%;
+    font-size:.75rem;
+
+    @include breakpoint($bp-tablet) {
+        width:85%
+    }
+
+    @include breakpoint($bp-large) {
+        padding-top:25%;
+
+        font-size:.9375rem;
+        // width:80%
+        
+    }
+    @include breakpoint($bp-xlarge) {
+        font-size:1rem;
+        transform: translateY(-12.5%);
+        // width:75%
+        
+    }
+    @include breakpoint($bp-xxlarge) {
+        font-size:1.125rem;
+        
+    }
+
     @include breakpoint(95em) {
         padding-left: 7.5%;
         padding-right: 7.5%;
     }
-
-    @include breakpoint($bp-large) {
-        padding-top:15%;
-    }
-    @include breakpoint($bp-xlarge down) {
-        font-size:.9375rem;
-    }
-
-    @include breakpoint($bp-tablet down) {
-        font-size:.75rem;
-    }
 }
 
 .hero__title {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: $fw-black;
-    max-width: $hcmaxwidth;
+    
     text-transform: uppercase;
     span {
         color: $cl-primary
@@ -61,15 +82,14 @@ $hcmaxwidth:45rem;
 }
 
 .hero__subtitle {
-    font-size: 1.75rem;
+    font-size: 1.5em;
     font-weight: $fw-normal;
-    max-width: $hcmaxwidth;
 }
 
 .hero__lead {
     font-size:1.125em;
     font-weight: $fw-bold;
-    max-width: $hcmaxwidth;
+
     ul {
         @include niceul;
     }
@@ -77,9 +97,10 @@ $hcmaxwidth:45rem;
 }
 
 .hero__actions {
-    margin-top:2rem;
+    margin-top:2em;
     .button {
         margin:0;
+        font-size: .875em;
     }
 }
 

@@ -61,7 +61,7 @@
 
 
     .promocard--compact &{
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         @include breakpoint($bp-xlarge) {
             // font-size:2.75rem;
         }
@@ -129,19 +129,19 @@
     grid-row-gap: rem-calc($layout-gutter-width / 2);
     grid-auto-rows: 1fr;
 
-    &.black {
-        background-color: $black;
+    &.nowrapper {
+        background-color: $cl-black;
     }
 
     @include breakpoint($bp-large) {
-        // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
-        grid-template-columns: repeat(3, 1fr);
+
+        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
         
     }
 
     @include breakpoint($bp-xlarge) {
-        // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
-        grid-template-columns: repeat(4, 1fr);
+        // grid-template-columns: repeat(4, 1fr);
         
     }
 

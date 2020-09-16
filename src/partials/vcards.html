@@ -1,3 +1,4 @@
+
 <ul class="vcardlist">
     {{#each vehicles}}
         <li>
@@ -15,12 +16,12 @@
                                     {{ title }}
                                 </h3>
                                 <p class="vcard__shortdesc">
-                                    {{ shortdesc }}
+                                    {{ shortdesc }}&nbsp;<span class="vcard__info" data-toggle="vcard__infocontent-{{@index}}"><img src="{{root}}assets/img/vectors/info.svg" alt=""></span>
                                 </p>
                             </header>
-                            <!-- <div class="vcard__content">
+                            <div id="vcard__infocontent-{{@index}}" class="vcard__infocontent dropdown-pane" data-dropdown>
                                 {{ info }}
-                            </div> -->
+                            </div>
                             <div class="vcard__data">
                                 <ul class="paramlist">
                                     {{#each params}}
@@ -35,7 +36,7 @@
                                 </ul>
                             </div>
                             <div class="vcard__actions">
-                                <button class="button small js-startvquoteform" data-ctarget="vcardcarousel-{{@index}}">Ajánlatkérés</button>
+                                <button class="button small js-startvquoteform" data-ctarget="vcardcarousel-{{@index}}">Kérjen ajánlatot</button>
                             </div>
                         </div>
                     </article>

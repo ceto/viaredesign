@@ -83,20 +83,62 @@
     }
 }
 .vcard__head {
-    border-bottom: 1px solid $cl-gray-light;
-    margin:0 0 .5rem 0;
-    padding:0 0 .5rem 0;
+    position: relative;
+    // border-bottom: 1px solid $cl-gray-xlight;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+
+
+
+.vcard__info {
+    position: absolute;
+    display: inline-block;
+    width:1em;
+    margin-top: .125em;
+    opacity: .75;
+    cursor: help;   
+
+
+}
+.vcard__infocontent {
+    font-size: .875rem;
+    padding:1.25rem;
+    background-color: $cl-primary;
+    border:none;
+    border-right: 1px solid rgba(#000,.125);
+    color:#fff;
+    font-weight: $fw-bold;
+    top:0 !important; 
+    left:0 !important;
+    bottom:auto !important;
+    right:auto !important;
+    width:100%;
+
+    @include breakpoint(large) {
+        width: 20rem;
+        bottom: 0 !important
+    }
+
+    @include breakpoint(xlarge) {
+       width: 25rem;
+    }
+
+    @include breakpoint(xxlarge) {
+        width: 28rem;
+    }
+
+
 }
 .vcard__maintitle {
     margin:0;
     text-transform: uppercase;
-    // color: $cl-primary;
+    color: $cl-primary;
     font-size:1.75rem;
     line-height: 1.2;
 }
 .vcard__shortdesc {
     font-weight: $fw-bold;
-    margin:0 0;
     line-height: 1.2;
     // display: none;
 }
@@ -126,8 +168,13 @@
 }
 
 .vcard__actions {
+    margin-top:1.5rem;
+    // text-align: center;
+    // display: flex;
+    // justify-content: space-between;
     .button {
         margin:0;
+        // width: 100%;
     }
 }
 
