@@ -49,6 +49,7 @@
     backface-visibility: hidden;
     background-color: $cl-body-background;
     color: $cl-body-font-color;
+    // margin-right:15%;
     @include breakpoint($bp-tablet) {
         margin-left: $globalsidebarwidth;
         transform: translateX(0) !important;
@@ -77,9 +78,9 @@
 }
 
 .pagesidebar__brand {
-    display: flex;
+    display: none;
 
-    height:$globalheaderheight;
+    height:$globalheaderheight-small;
     align-items: center;
 
     &:hover, &:focus {
@@ -95,9 +96,13 @@
 
     }
 
-    @include breakpoint($bp-tablet down) {
-        height:$globalheaderheight-small;
-        display: none;
+    @include breakpoint($bp-tablet) {
+        // height:$globalheaderheight-small;
+        display: flex;
+    }
+
+    @include breakpoint($bp-large) {
+        height:$globalheaderheight;
     }
 }
 

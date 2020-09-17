@@ -11,14 +11,19 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     width: 100%;
-    @include breakpoint($bp-large) {
+    @include breakpoint($bp-xlarge) {
         padding-left: 7.5%;
         padding-right: 7.5%;
     }
-    @include breakpoint(80em) {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+
+    // @include breakpoint($bp-xxlarge) {
+    //     padding-left: 10%;
+    //     padding-right: 10%;
+    // }
+    // @include breakpoint(85em) {
+    //     padding-left: 10%;
+    //     padding-right: 10%;
+    // }
     
     @include breakpoint(95em) {
         padding-left: calc(50% - #{$global-width/2});
@@ -32,12 +37,12 @@
     //     padding-bottom: 7rem;
     // }
 
-    &.full {
-        @include breakpoint(95em) {
-            padding-left: 7.5%;
-            padding-right: 7.5%;
-        }   
-    }
+    // &.full {
+    //     @include breakpoint(95em) {
+    //         padding-left: 7.5%;
+    //         padding-right: 7.5%;
+    //     }   
+    // }
     &.notop {
         padding-top: 0;   
     }
