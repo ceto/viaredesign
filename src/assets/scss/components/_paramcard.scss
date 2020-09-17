@@ -24,7 +24,7 @@
 
     text-align: center;
 
-    padding:1.75em .75em .5em .75em;
+    padding:1em .75em .5em .75em;
 
     border: 1px solid rgba(#757575,.125);
     background-color: $cl-body-background;
@@ -33,9 +33,9 @@
     // align-content: center;
 
     // min-height: 8em;
-    width: 8em;
-    min-width: 8em;
-    max-width: 8em;
+    width: 8.5em;
+    min-width: 8.5em;
+    max-width: 8.5em;
 
     @include breakpoint($bp-xxxlarge) {
         font-size: 1.125rem;
@@ -44,7 +44,7 @@
     img {
         width: 3em;
         display: block !important;
-        margin:0 auto 2em;
+        margin:0 auto 1em;
         filter: grayscale(1) blur(5px) opacity(.5);
     }
 
