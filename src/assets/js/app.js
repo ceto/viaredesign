@@ -37,31 +37,6 @@ $('.js-closevquoteform').on('click', function(event) {
 });
 
 
-const $vcardcarousel = $('.vcardcarousel');
-$vcardcarousel
-    .on("init", function (event, slick) {
-    })
-    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        $(slick).closest('.vcard').toggleClass('is-open');
-    })
-    .on('afterChange', function (event, slick, currentSlide) {
-    })
-    .slick({
-        arrows: false,
-        dots: false,
-        // prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#icon-caret-left"></use></svg></button>',
-        // nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#icon-caret-right"></use></svg></button>',
-        // appendArrows: '.carouselwrap',
-        infinite: false,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        touchMove: false,
-        swipe: false,
-        // fade: true,
-
-
-    });
-
 $(document).ready(function(){
     $('.sidemenu > li').each( function(index) {
         if ( $(this).find('ul').length > 0) {
@@ -84,3 +59,52 @@ $('.js-closesidemenu').on('click', function(e) {
     $(this).closest('.sidemenu').removeClass('is-open');
     // $(this).closest('.sidemenu > li').removeClass('is-active');
 });
+
+
+const $vcardcarousel = $('.vcardcarousel');
+$vcardcarousel
+    .on("init", function (event, slick) {
+    })
+    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $(slick).closest('.vcard').toggleClass('is-open');
+    })
+    .on('afterChange', function (event, slick, currentSlide) {
+    })
+    .slick({
+        arrows: false,
+        dots: false,
+        // prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#icon-caret-left"></use></svg></button>',
+        // nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#icon-caret-right"></use></svg></button>',
+        // appendArrows: '.carouselwrap',
+        infinite: false,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        touchMove: false,
+        swipe: false,
+        // fade: true,
+});
+
+const $swipegallery = $('.swipegallery');
+$swipegallery
+    .on("init", function (event, slick) {
+    })
+    .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    })
+    .on('afterChange', function (event, slick, currentSlide) {
+    })
+    .slick({
+        arrows: true,
+        // dots: true,
+        // prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#icon-caret-left"></use></svg></button>',
+        // nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#icon-caret-right"></use></svg></button>',
+        // appendArrows: '.carouselwrap',
+        infinite: true,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        focusOnSelect: true,
+        // fade: true,
+});
+
+
+

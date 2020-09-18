@@ -32,11 +32,24 @@ ul.niceul {
 }
 
 .bodycopy {
-    ul {
+    ul:not(.swipegallery) {
         @include niceul;
     }
     ol {
         @include niceol;
+    }
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    a:not(.button) {
+        text-decoration: underline;
+        text-decoration-color: $cl-primary;
+    }
+
+    .button {
+        font-size: .875em;
     }
 }
 
