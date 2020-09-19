@@ -21,10 +21,10 @@
     margin:0;
     padding:0;
     @include breakpoint($bp-tablet) {
-        @include grid-width(4);
+        @include grid-width(4,$gutter-count: 4);
     }
     @include breakpoint($bp-xlarge) {
-        @include grid-width(6);
+        @include grid-width(6,$gutter-count: 6);
     }
 }
 
@@ -40,19 +40,22 @@
     position: relative;
 
     @include breakpoint($bp-tablet) {
-        @include grid-width(8);
+        @include grid-width(8,$gutter-count: 7);
         padding: 0 0 4rem rem-calc($layout-gutter-width);
         padding-bottom:4rem;
 
     }
     @include breakpoint($bp-xlarge) {
-        @include grid-width(6);
+        @include grid-width(6,$gutter-count: 5);
         // max-width: 42.5%;
 
     }
 
     .nowrapper &{
-        padding:rem-calc($layout-gutter-width*2) rem-calc($layout-gutter-width);
+        padding:rem-calc($layout-gutter-width*2) 3%;
+        @include breakpoint($bp-medium) {
+            padding:rem-calc($layout-gutter-width*2) 5%;
+        }
         @include breakpoint($bp-tablet) {
             padding-bottom:4rem;
         }
