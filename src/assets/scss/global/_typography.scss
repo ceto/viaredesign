@@ -32,7 +32,7 @@ ul.niceul {
 }
 
 .bodycopy {
-    ul:not(.swipegallery) {
+    ul:not(.swipegallery):not(.slick-dots) {
         @include niceul;
     }
     ol {

@@ -52,7 +52,7 @@ $hcmaxwidth:55em;
     }
 
     @include breakpoint($bp-large) {
-        padding-top:25%;
+        padding-top:23%;
 
         font-size:.9375rem;
         // width:80%
@@ -110,3 +110,19 @@ $hcmaxwidth:55em;
 }
 
 
+
+
+.heroslider {
+    overflow: hidden;
+    background-color: $cl-gray-xdark;
+
+    .slick-dots {
+        @extend .pagewrap;
+        position: absolute;
+        padding-top:0;
+        padding-bottom:0;
+        text-align: right;
+        bottom:5%;
+
+    }
+}
