@@ -123,4 +123,35 @@ $swipegallery
 });
 
 
+const $postswiper = $('.postswiper');
+$postswiper
+    .slick({
+        mobileFirst: true,
+        arrows: false,
+        dots: true,
+        // prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#icon-caret-left"></use></svg></button>',
+        // nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#icon-caret-right"></use></svg></button>',
+        // appendArrows: '.carouselwrap',
+        infinite: true,
+        slidesToShow: 1,
+        adaptiveHeight:true,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            }
+        ]
+
+});
+
 

@@ -92,10 +92,9 @@
         <li class="tabalikemenu__title">Hírek, újdonságok a nagyvilágból az autógyártás fuvarozás ás logisztika területeiről</li>
         <li><a href="{{root}}trucknews.html">Mutasd mindet</a></li>
     </ul>
-    <br>
-    <ul class="postcardgrid onlythree">
+    <section class="postswiper">
         {{#each vehicles}}
-            <li>{{>postcard}}</li>
+            <div>{{>postcard}}</div>
         {{/each}}
-    </ul> 
+    </section> 
 </div>
