@@ -103,7 +103,8 @@
     }
 
     @include breakpoint($bp-tablet) {
-        // grid-column-gap: rem-calc($layout-gutter-width * 1.5);
+        grid-column-gap: rem-calc($layout-gutter-width);
+        grid-row-gap: rem-calc($layout-gutter-width);
         // grid-template-columns: repeat(2, 1fr);
         
     }

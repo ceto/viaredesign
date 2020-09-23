@@ -33,10 +33,10 @@ $cwibgmaxwidth:60rem;
     // color: #fff;
     // padding-top:30%;
     // padding-bottom: 0;
-    @include breakpoint(95em) {
-        padding-left: 7.5%;
-        padding-right: 7.5%;
-    }
+    // @include breakpoint(95em) {
+    //     padding-left: 7.5%;
+    //     padding-right: 7.5%;
+    // }
 
     @include breakpoint($bp-large) {
         // padding-top:15%;

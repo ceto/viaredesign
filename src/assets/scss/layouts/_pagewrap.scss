@@ -157,13 +157,13 @@
 }
 
 .narrowwrap {
-    max-width:  #{$global-width/1.5};
+    max-width:  #{$global-width*0.75};
     margin-left:auto;
     margin-right:auto;
 }
 
 .xnarrowwrap {
-    max-width:  #{$global-width/2};
+    max-width:  #{$global-width*0.5};
     margin-left:auto;
     margin-right:auto;
 }

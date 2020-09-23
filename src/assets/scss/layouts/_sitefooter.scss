@@ -2,10 +2,10 @@
     @extend .pagewrap;
     background-color: $cl-gray-xdark;
     color: $cl-gray-light;
-    @include breakpoint(95em) {
-        padding-left: 7.5%;
-        padding-right: 7.5%;
-    } 
+    // @include breakpoint(95em) {
+    //     padding-left: 7.5%;
+    //     padding-right: 7.5%;
+    // } 
 
 }
 
