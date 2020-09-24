@@ -37,7 +37,7 @@
 }
 
 .promocard__content {
-    padding:0 10% 5rem 10%;
+    padding:0 7.5% 5rem 7.5%;
     // padding-bottom: 5.5rem;
     height: 100%;
     position: relative;
@@ -83,8 +83,11 @@
     // text-align: right;
 
     .button {
-        font-size: .75rem;
+        font-size: .875rem;
         margin:0;
+        .promocard--compact &{
+            font-size: .875rem;
+        }
     }
 }
 
@@ -93,7 +96,7 @@
     margin: 0 0;
     padding: rem-calc($layout-gutter-width / 2 )  0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     grid-column-gap: rem-calc($layout-gutter-width / 2 );
     grid-row-gap: rem-calc($layout-gutter-width / 2);
     grid-auto-rows: 1fr;
@@ -102,7 +105,7 @@
         background-color: $black;
     }
 
-    @include breakpoint($bp-tablet) {
+    @include breakpoint($bp-large) {
         grid-column-gap: rem-calc($layout-gutter-width);
         grid-row-gap: rem-calc($layout-gutter-width);
         // grid-template-columns: repeat(2, 1fr);

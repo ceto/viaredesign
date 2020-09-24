@@ -74,7 +74,7 @@ $heroslider
         cssEase: 'linear',
         speed: 500,
         adaptiveHeight: true,
-        autoplay:true
+        autoplay:false
 });
 
 const $vcardcarousel = $('.vcardcarousel');
@@ -128,17 +128,18 @@ $postswiper
     .slick({
         mobileFirst: true,
         arrows: false,
-        dots: true,
+        dots: false,
         // prevArrow: '<button type="button" class="slick-prev"><svg class="icon"><use xlink:href="#icon-caret-left"></use></svg></button>',
         // nextArrow: '<button type="button" class="slick-next"><svg class="icon"><use xlink:href="#icon-caret-right"></use></svg></button>',
         // appendArrows: '.carouselwrap',
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
-        adaptiveHeight:true,
+        // adaptiveHeight:true,
         responsive: [
             {
-                breakpoint: 640,
+                breakpoint: 1024,
                 settings: {
+                    dots: true,
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
@@ -146,6 +147,7 @@ $postswiper
             {
                 breakpoint: 1280,
                 settings: {
+                    dots: true,
                     slidesToShow: 3,
                     slidesToScroll: 3
                 }
@@ -153,5 +155,18 @@ $postswiper
         ]
 
 });
+
+
+const $testiswiper = $('.testiswiper');
+$testiswiper
+    .slick({
+        arrows: false,
+        dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        adaptiveHeight:true,
+});
+
+
 
 

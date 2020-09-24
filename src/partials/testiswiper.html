@@ -1,0 +1,19 @@
+
+<div class="testiswiper">
+    {{#each vehicles}}
+        <div>
+            <blockquote class="testi">
+                <figure class="testi__fig">
+                    <img width="{{ img_width }}" height="{{ img_width }}" src="https://source.unsplash.com/{{ img_width }}x{{ img_width }}/?portrait" alt="">
+                </figure>
+                <div class="testi__content">
+                    <h3 class="testi__name">Kovács {{ title }}</h3>
+                    <p class="testi__role">CEO {{ shortdesc }}</p>
+                    <div class="testi__quote">
+                        <p>{{ info }}</p>
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+    {{/each}}
+</div>
