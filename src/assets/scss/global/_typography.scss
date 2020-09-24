@@ -336,4 +336,10 @@ hr {
         @include niceol;
     }
 
+    a:not(.button) {
+        text-decoration: underline;
+        text-decoration-color: $cl-primary;
+    }
+    
+
 }
