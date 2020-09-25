@@ -1,7 +1,5 @@
 
 .pagewrap {
-    //max-width: 90%;
-    //border:1px solid red;
     position: relative;
     z-index: 0;
     overflow: hidden;
@@ -11,6 +9,9 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     width: 100%;
+
+    box-shadow: inset .5rem 0 .5rem -.5rem rgba(#000,.5);
+
     @include breakpoint($bp-medium) {
         padding-left: 5%;
         padding-right: 5%;
@@ -20,33 +21,13 @@
         padding-right: 7.5%;
     }
 
-    // @include breakpoint($bp-xxlarge) {
-    //     padding-left: 10%;
-    //     padding-right: 10%;
-    // }
-    // @include breakpoint(85em) {
-    //     padding-left: 10%;
-    //     padding-right: 10%;
-    // }
     
     @include breakpoint(95em) {
         padding-left: calc(50% - #{$global-width/2});
         padding-right: calc(50% - #{$global-width/2});
-        // padding-top: 6rem;
-        // padding-bottom: 6rem;
+
     }
 
-    // @include breakpoint(100em) {
-    //     padding-top: 7rem;
-    //     padding-bottom: 7rem;
-    // }
-
-    // &.full {
-    //     @include breakpoint(95em) {
-    //         padding-left: 7.5%;
-    //         padding-right: 7.5%;
-    //     }   
-    // }
     &.notop {
         padding-top: 0;   
     }
@@ -70,24 +51,29 @@
     }
     &.accent {
         background-color: $cl-primary;
-        color: #fff;
+        color: $cl-white;
     }
 
     &.dark {
         background-color: $cl-gray-dark;
-        color: #fff;
+        color: $cl-white;
     }
     &.xdark {
         background-color: $cl-gray-xdark;
-        color: #fff;
+        color: $cl-white;
     }
     &.black {
-        background-color: $black;
-        color: #fff;
+        background-color: $cl-black;
+        color: $cl-white;
+    }
+    &.xlight {
+        background-color: $cl-gray-xlight;
+    }
+    &.light {
+        background-color: $cl-gray-light;
     }
     &.white {
         background-color: $white;
-        color: #fff;
     }
 }
 

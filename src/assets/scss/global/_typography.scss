@@ -201,12 +201,16 @@ ul.bulletlist {
     line-height: 1.2;
     font-size: 1.875rem;
     margin: 0 0;
+    @include breakpoint($bp-tablet) {
+        font-size: 2.5rem;
+    }
+
     @include breakpoint($bp-large) {
         font-size: 2rem;
     }
 
     @include breakpoint($bp-xlarge) {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .accent & {
@@ -249,13 +253,7 @@ ul.bulletlist {
         }
     }
 
-    @include breakpoint($bp-tablet) {
-        font-size: 2.5rem;
-    }
 
-    @include breakpoint($bp-xlarge) {
-        font-size: 3rem;
-    }
 
     &.withlinea {
         // margin-bottom: 0;
