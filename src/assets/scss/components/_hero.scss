@@ -7,6 +7,14 @@ $hcmaxwidth:60em;
     overflow: hidden;
     box-shadow: inset .5rem 0 .5rem -.5rem rgba(#000,.5);
     
+    @include breakpoint($bp-tablet) {
+        min-height: calc(68vw - #{$globalsidebarwidth});
+    }
+
+    @include breakpoint($bp-large) {
+        min-height: calc(56.25vw - #{$globalsidebarwidth});
+    }
+    
 
     &.fullheight {
         @include breakpoint($bp-xlarge) {
@@ -27,7 +35,9 @@ $hcmaxwidth:60em;
     width: 100%;
     height: 87%;
     // background-color: #000;
-    background-image: linear-gradient(0deg, #000 0, #aaaaaa 10%, #fff 66.66%);
+    mask-image: linear-gradient(0deg, rgba(#000,0) 0, rgba(#000,.5) 33.333%, rgba(#000,1) 66.666%);
+
+    // background-image: linear-gradient(0deg, #000 0, #aaaaaa 33.333%, #fff 66.666%);
     background-size: 100% 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -35,9 +45,10 @@ $hcmaxwidth:60em;
     margin:0;
     padding:0;
 
-    @include breakpoint($bp-large) {
+    @include breakpoint($bp-tablet) {
         height:100%;
-        background-image: linear-gradient(45deg,#aaaaaa 10%, #fff 60%);
+        // background-image: linear-gradient(45deg,#aaaaaa 33.333%, #fff 66.666%);
+        mask-image: linear-gradient(45deg, rgba(#000,0) 0, rgba(#000,.75) 50%, rgba(#000,1) 66.666%);
         background-size: initial;
         background-position:  initial;
     }
@@ -48,7 +59,7 @@ $hcmaxwidth:60em;
         object-fit: cover;
         max-width: none;
         object-fit: cover;
-        mix-blend-mode: multiply;
+        // mix-blend-mode: multiply;
         // opacity: 0;
     }
 }
@@ -63,19 +74,23 @@ $hcmaxwidth:60em;
     font-size:.75rem;
 
     @include breakpoint($bp-tablet) {
+        position: absolute;
+        left:0;
+        bottom:25%;
+        transform: translateY(25%);
+        padding-top:5%;
+        padding-bottom:5%;
         width:85%
+        
     }
 
     @include breakpoint($bp-large) {
-        padding-top:23%;
-
-        font-size:.9375rem;
-        // width:80%
         
+        font-size:.9375rem;        
     }
     @include breakpoint($bp-xlarge) {
         font-size:1rem;
-        transform: translateY(-12.5%);
+        // transform: translateY(-12.5%);
         // width:75%
         
     }

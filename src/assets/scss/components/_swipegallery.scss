@@ -35,5 +35,8 @@
             height: calc((100vw - #{$globalsidebarwidth})*0.5);
             max-height: 75vh;
         }
+        // @include breakpoint($bp-xlarge) {
+        //     height: calc((100vw - #{$globalsidebarwidth})*0.4);
+        // }
     }
 }
