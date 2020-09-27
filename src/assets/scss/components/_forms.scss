@@ -15,6 +15,11 @@
 }
 
 
+select {
+    width:100%;
+    margin:0;
+}
+
 .checkboxlabel {
     line-height: 1.2;
     font-weight: $fw-bold;
@@ -84,8 +89,11 @@
         margin: 0 0 0;
     }
     label {
-        font-family: $fontsans;
         letter-spacing: 0.05em;
+    
+    }
+    &.ondark label {
+        color: $cl-gray-xlight;
     }
 }
 
@@ -141,6 +149,12 @@
         padding: 0;
         flex-basis: 12rem;
         flex-grow: 1;
+    }
+    &.strict {
+        > li {
+            flex-basis: 100%;
+            margin: 0.5rem 0.25rem;
+        }
     }
 }
 
@@ -250,4 +264,13 @@ form .result {
             color: $cl-primary;
         }
     }
+}
+
+.contactmodal {
+    background-color: rgba(#fff,1);
+    mix-blend-mode: screen;
+    color:$cl-body-font-color;
+    padding:5% 7.5%;
+    max-width: 50rem;
+    margin:0 auto;
 }
