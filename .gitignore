@@ -6,3 +6,9 @@ dist
 *.swp
 .cache
 .idea
+src/assets/grunticon/png
+src/assets/grunticon/icons.data.png.css
+src/assets/grunticon/icons.fallback.css
+src/assets/grunticon/grunticon.loader.js
+
+
